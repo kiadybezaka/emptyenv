@@ -1,0 +1,22 @@
+.section-album {
+  height:150px;
+  margin-top:10px;
+  background-color: $secondary-color;
+  margin-bottom:10px;
+  border-radius:5px;
+  @media only screen and (min-width: 1024px) {
+    border-radius:0;
+  }
+  &__photo {
+    background-color: $secondary-color;
+    height:130px;
+  }
+  &__left {
+    /*background-color: #FFF10F;*/
+    @include grid-column(6);
+  }
+  &__right {
+    /*background-color: #FFC50F;*/
+    @include grid-column(6);
+  }
+}
