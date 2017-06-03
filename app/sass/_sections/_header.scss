@@ -12,9 +12,11 @@
   &.sticky {
     position: fixed;
     z-index: 9999;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
   }
   &__logo {
     color: $secondary-color;
     text-transform: capitalize;
+    font-size: 22px;
   }
 }

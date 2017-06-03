@@ -6777,7 +6777,7 @@ footer {
 .wrapper {
   width: 100%; }
 
-body {
+h1, h2, body {
   font-family: "Josefin Sans", sans-serif !important; }
 
 .section-slider {
@@ -6814,18 +6814,27 @@ body {
     align-items: center;
     justify-content: center; }
     .section-content__portfolio .portfolio__first-name, .section-content__portfolio .portfolio__name {
-      margin: 10px 0; }
+      margin: 10px 0;
+      display: none; }
     .section-content__portfolio .portfolio__img {
       margin: 10px 0;
       width: 200px;
       height: 200px;
-      border-radius: 100px; }
+      border-radius: 100px;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3); }
+      @media screen and (max-width: 480px) {
+        .section-content__portfolio .portfolio__img {
+          width: 150px;
+          height: 150px;
+          border-radius: 75px; } }
     @media screen and (min-width: 1024px) {
       .section-content__portfolio {
         padding: 35px;
         width: 40%; } }
   .section-content__about {
     display: none; }
+    .section-content__about .about__title, .section-content__about .about__content {
+      margin: 10px 0; }
     .section-content__about .about__content {
       width: 600px; }
     @media screen and (min-width: 1024px) {
@@ -6836,6 +6845,27 @@ body {
         justify-content: center;
         padding: 35px;
         width: 60%; } }
+
+.mobile-only {
+  position: static;
+  background-color: transparent;
+  text-align: center;
+  padding: 0 20px; }
+  .mobile-only h2 {
+    color: #008CBA; }
+  .mobile-only p {
+    color: #000; }
+  .mobile-only .section-content__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px; }
+    .mobile-only .section-content__about .about__content {
+      width: auto; }
+    @media screen and (min-width: 1024px) {
+      .mobile-only .section-content__about {
+        display: none; } }
 
 .section-header {
   width: 100%;
@@ -6850,7 +6880,9 @@ body {
       justify-content: flex-start; } }
   .section-header.sticky {
     position: fixed;
-    z-index: 9999; }
+    z-index: 9999;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3); }
   .section-header__logo {
     color: #FFF;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: 22px; }
