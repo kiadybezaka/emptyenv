@@ -6835,8 +6835,6 @@ h1, h2, body {
     display: none; }
     .section-content__about .about__title, .section-content__about .about__content {
       margin: 10px 0; }
-    .section-content__about .about__content {
-      width: 600px; }
     @media screen and (min-width: 1024px) {
       .section-content__about {
         display: flex;
