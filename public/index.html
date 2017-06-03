@@ -1,82 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Index - MyTemplate</title>
+    <title>Index - siteweb</title>
     <link rel="shortcut icon" href="images/icons/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <header>
-          <div class="row section-header">
-            <div class="large-4 columns section-header__logo">
-              <h2 class="test-h2 position-center js-test-btn"><a href="#">logo</a></h2>
-            </div>
-            <div class="large-4 columns section-header__menu">
-              <h2 class="test-h2 position-center"></h2>
-            </div>
-            <div class="large-4 columns section-header__icon">
-              <h2 class="test-h2 position-center"></h2>
-            </div>
-          </div>
-        </header>
-      </header>
+      <header class="section-header js-sticky-header"><a href="#" class="section-header__logo js-test-btn">kiady bezaka</a></header>
       <main>
-        <div class="row">
-          <div class="section-slider js-slide"></div>
-        </div>
-        <div class="row">
+        <div class="section-slider">
+          <div class="section-slider__content">
+            <picture class="product-category__img">
+              <source srcset="http://via.placeholder.com/480x500" media="(max-width: 480px)">
+              <source srcset="http://via.placeholder.com/768x500" media="(max-width: 768px)">
+              <source srcset="http://via.placeholder.com/1200X500" media="(max-width: 1200px)"><img src="http://via.placeholder.com/1920x500" height="" width="" alt="slider image">
+            </picture>
+          </div>
           <div class="section-content">
-            <div class="large-8 columns box-left">
-              <div class="section-content__team"></div>
+            <div class="section-content__portfolio"><img src="http://via.placeholder.com/200x200" height="200" width="200" alt="kiady bezaka" class="portfolio__img">
+              <p class="portfolio__first-name">Razafindrabe</p>
+              <p class="portfolio__name">Burel Kiady Bezaka</p>
             </div>
-            <div class="large-4 columns box-right">
-              <div class="section-content__article"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="section-tarif">
-            <div class="large-3 columns box-left">
-              <div class="section-tarif__box"></div>
-            </div>
-            <div class="large-3 columns box-center">
-              <div class="section-tarif__box"></div>
-            </div>
-            <div class="large-3 columns box-center">
-              <div class="section-tarif__box"></div>
-            </div>
-            <div class="large-3 columns box-right">
-              <div class="section-tarif__box"></div>
+            <div class="section-content__about">
+              <h2 class="about__title">Lorem ipsum</h2>
+              <p class="about__content">Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.</p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="section-album">
-            <div class="section-album__left"></div>
-            <div class="section-album__right"></div>
-          </div>
-        </div>
-        
-        
+        <div class="section-tarif"></div>
+        <div class="section-album"></div>
       </main>
-      <footer>
-        <footer>
-          <div class="row section-footer">
-            <div class="large-4 columns section-footer">
-              <h2 class="test-h2 position-center"></h2>
-            </div>
-            <div class="large-4 columns section-footer">
-              <h2 class="test-h2 position-center"></h2>
-            </div>
-            <div class="large-4 columns section-footer">
-              <h2 class="test-h2 position-center"></h2>
-            </div>
-          </div>
-        </footer>
-        <script src="scripts/app.js"></script>
-      </footer>
+      <footer></footer>
+      <script src="scripts/app.js"></script>
     </div>
   </body>
 </html>

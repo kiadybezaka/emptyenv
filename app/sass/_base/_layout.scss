@@ -1,44 +1,12 @@
 header {
   background-color: $primary-color;
 }
-main {
-  background-color: $background-color;
-  min-height:500px;
-}
 footer {
-  background-color:$primary-color;
-  min-height:400px;
+  background-color: $primary-color;
 }
 
 .wrapper {
   width:100%;
 }
-.no-padding {
-  @media only screen and (min-width: 1024px) {
-    padding:0;
-  }
-}
-.no-padding--right {
-  @media only screen and (min-width: 1024px) {
-    padding-right:0;
-  }
-}
-.box-center {
-  @media only screen and (min-width: 1024px) {
-    padding-left:7px;
-    padding-right:7px;
-  }
-}
-.box-right {
-  @media only screen and (min-width: 1024px) {
-    padding-left:7px;
-    padding-right:0;
-  }
-}
-.box-left {
-  @media only screen and (min-width: 1024px) {
-    padding-right:7px;
-    padding-left:0;
-  }
-}
+
 
