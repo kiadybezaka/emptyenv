@@ -6772,10 +6772,19 @@ header {
   background-color: #008CBA; }
 
 footer {
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #008CBA; }
+  footer__copyright {
+    color: #e7e7e7; }
 
 .wrapper {
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 h1, h2, body {
   font-family: "Josefin Sans", sans-serif !important; }
@@ -6884,3 +6893,29 @@ h1, h2, body {
     color: #FFF;
     text-transform: capitalize;
     font-size: 22px; }
+
+.section-road {
+  height: 400px;
+  margin: 20px 0;
+  text-align: center; }
+  .section-road h2,
+  .section-road p {
+    color: #008CBA;
+    margin: 10px 0; }
+  .section-road__content {
+    width: 100%; }
+  .section-road__item {
+    float: left; }
+    .section-road__item:focus {
+      outline: 0 !important; }
+  .section-road__box {
+    position: relative;
+    margin: 35px 0; }
+    @media screen and (min-width: 1024px) {
+      .section-road__box {
+        margin: 35px 20px; } }
+  .section-road .box__text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0); }
