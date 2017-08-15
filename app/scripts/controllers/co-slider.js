@@ -30,6 +30,17 @@ module.exports = function () {
   //----- carousel for road slider ----//
   //////////////////////////////////////
     var roadSlider = '.js-slide-road';
+    
+    var fixBrokenAreaReference = function(className) {
+    // fix the broken aria reference test.
+      $(className).each(function() {
+        const $slide = $(this);
+        if ($slide.attr('aria-describedby')) { // ignore extra/cloned slides
+          $(this).attr('id', $slide.attr('aria-describedby'));
+        }
+      });
+    }
+    
     //initialize slick.js
     $(roadSlider).slick({
       rows: 1,
@@ -63,4 +74,5 @@ module.exports = function () {
         }
       ]
     });
+    fixBrokenAreaReference('.section-road__item');
 };
