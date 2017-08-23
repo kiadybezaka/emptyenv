@@ -6839,7 +6839,7 @@ h1, h2, body {
     @media screen and (min-width: 1024px) {
       .section-content__portfolio {
         padding: 35px;
-        width: 40%; } }
+        width: 30%; } }
   .section-content__about {
     display: none; }
     .section-content__about .about__title, .section-content__about .about__content {
