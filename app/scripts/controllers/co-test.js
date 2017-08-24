@@ -6,6 +6,6 @@ module.exports = function() {
 
     $(_jsTest.jsTestBtn).on('click', function(e) {
         e.preventDefault();
-        _jsTest.testJs();
+        _jsTest.testWsFunc();
     })
 }
