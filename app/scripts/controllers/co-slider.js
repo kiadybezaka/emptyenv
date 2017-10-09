@@ -46,23 +46,25 @@ module.exports = function () {
       rows: 1,
       adaptiveHeight: true,
       slidesToShow: 9,
-      slidesToScroll: 9,
+      slidesToScroll: 1,
       dots: false,
       infinite: false,
-      arrows: false,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
       responsive: [
         {
           breakpoint: 1600,
           settings: {
             slidesToShow: 6,
-            slidesToScroll: 6,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
           }
         },
         {

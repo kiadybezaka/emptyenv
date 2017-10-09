@@ -6789,6 +6789,39 @@ footer {
 h1, h2, body {
   font-family: "Josefin Sans", sans-serif !important; }
 
+.slick-slider__content {
+  position: relative; }
+
+.slick-arrow {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  top: 40px; }
+
+.slick-prev {
+  position: absolute;
+  left: 0;
+  top: 55%;
+  transform: translate(0, -50%); }
+  .slick-prev:before {
+    content: "<";
+    position: relative;
+    top: 25px; }
+
+.slick-next {
+  position: absolute;
+  right: 0;
+  top: 55%;
+  transform: translate(0, -50%); }
+  .slick-next:before {
+    content: ">";
+    position: relative;
+    top: 25px; }
+
+.slick-disabled {
+  display: none !important; }
+
 .section-slider {
   position: relative;
   padding: 0;
