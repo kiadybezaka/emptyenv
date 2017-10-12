@@ -1,0 +1,35 @@
+.slick-slider__content {
+  position: relative;
+}
+.slick-arrow {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  top: 40px;
+}
+.slick-prev {
+  position: absolute;
+  left: 0;
+  top: 55%;;
+  transform: translate(0,-50%);
+  &:before { 
+    content: "<";
+    position: relative;
+    top: 25px;
+  }
+}
+.slick-next {
+  position: absolute;
+  right: 0;
+  top: 55%;;
+  transform: translate(0,-50%);
+  &:before { 
+    content: ">";
+    position: relative;
+    top: 25px;
+  }
+}
+.slick-disabled {
+  display: none!important;
+}
