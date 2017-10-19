@@ -1,0 +1,45 @@
+extends _base/layout.jade
+
+block vars
+
+  - title = 'Index'
+
+block main
+  .section-slider
+
+    .section-slider__content
+
+      picture.product-category__img
+        source(srcset="http://via.placeholder.com/480x500", media="(max-width: 480px)")
+        source(srcset="http://via.placeholder.com/768x500", media="(max-width: 768px)")
+        source(srcset="http://via.placeholder.com/1200X500", media="(max-width: 1200px)")
+        img(src="http://via.placeholder.com/1920x500" , width="1920" , height="500" , alt="slider image" )
+
+    .section-content
+
+      .section-content__portfolio
+        img.portfolio__img(src="http://via.placeholder.com/200x200", height="200", width="200" alt="kiady bezaka" )
+        p.portfolio__first-name Razafindrabe
+        p.portfolio__name Burel Kiady Bezaka
+
+      .section-content__about
+        h2.about__title Lorem ipsum &amp; Dolor pueris
+        p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
+
+  .section-content.mobile-only
+
+    .section-content__about
+
+      h2.about__title Lorem ipsum &amp; Dolor pueris
+      p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
+
+  .section-road
+
+    h2.section-road__title Lorem ipsum
+    p.section-road__description Lorem ipsum dolor tantum tribui
+    .section-road__content
+
+  .section-album
+
+
+

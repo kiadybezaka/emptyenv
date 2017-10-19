@@ -1,0 +1,15 @@
+include ../_mixins/all.jade
+
+block vars
+  - title = 'Default'
+
+doctype html
+html(lang="en")
+  head
+    include head.jade
+  body
+    .wrapper
+      include header.jade
+      main
+        block main
+      include footer.jade
