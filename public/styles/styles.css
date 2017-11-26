@@ -6811,6 +6811,12 @@ footer {
   width: 100%;
   overflow-x: hidden; }
 
+.desktop-only {
+  display: none !important; }
+  @media screen and (min-width: 1024px) {
+    .desktop-only {
+      display: flex !important; } }
+
 h1, h2, body {
   font-family: "Josefin Sans", sans-serif !important; }
 
@@ -6901,7 +6907,30 @@ h1, h2, body {
         display: none; } }
 
 .section-album {
-  padding: 0 20px; }
+  min-height: 400px;
+  margin: 20px 0 60px;
+  padding: 0 20px;
+  text-align: center; }
+  .section-album h3,
+  .section-album h2,
+  .section-album p {
+    color: #008CBA;
+    margin: 10px 0; }
+  .section-album__content {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap; }
+  .section-album__box-img {
+    flex: auto;
+    width: 200px; }
+  .section-album__img {
+    width: 100%;
+    height: auto;
+    cursor: pointer; }
 
 .section-road {
   min-height: 400px;
@@ -7039,8 +7068,122 @@ h1, h2, body {
     @media screen and (min-width: 1024px) {
       .section-skill__box {
         margin: 35px 20px; } }
+  .section-skill__box-img {
+    width: auto;
+    height: 100px; }
+  .section-skill .box__img {
+    width: auto;
+    height: 100px; }
   .section-skill .box__text {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0); }
+
+.section-tarif {
+  min-height: 200px;
+  margin: 20px 0 60px;
+  padding: 0 20px;
+  text-align: center; }
+  .section-tarif h3,
+  .section-tarif ul,
+  .section-tarif h2,
+  .section-tarif p {
+    color: #008CBA;
+    margin: 10px 0; }
+  .section-tarif__content {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 0;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 1024px) {
+      .section-tarif__content {
+        flex-direction: row; } }
+  .section-tarif__service {
+    width: 100%;
+    padding: 20px; }
+    @media screen and (min-width: 1024px) {
+      .section-tarif__service {
+        width: 70%; } }
+    .section-tarif__service h2,
+    .section-tarif__service p {
+      text-align: center; }
+      @media screen and (min-width: 1024px) {
+        .section-tarif__service h2,
+        .section-tarif__service p {
+          text-align: left; } }
+  .section-tarif__gear {
+    width: 100%;
+    padding: 20px; }
+    @media screen and (min-width: 1024px) {
+      .section-tarif__gear {
+        width: 30%; } }
+    .section-tarif__gear h3,
+    .section-tarif__gear p {
+      text-align: center; }
+      @media screen and (min-width: 1024px) {
+        .section-tarif__gear h3,
+        .section-tarif__gear p {
+          text-align: left; } }
+    .section-tarif__gear ul {
+      margin: 0 auto; }
+    .section-tarif__gear li {
+      text-align: left; }
+
+.section-contact {
+  min-height: 200px;
+  margin: 20px 0 60px;
+  padding: 0 20px;
+  text-align: center; }
+  .section-contact h3,
+  .section-contact h2,
+  .section-contact p {
+    color: #008CBA;
+    margin: 10px 0; }
+  .section-contact__content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0;
+    display: flex;
+    flex-direction: column; }
+  .section-contact__input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media screen and (min-width: 1024px) {
+      .section-contact__input-group {
+        flex-direction: row; } }
+  .section-contact__img {
+    width: 100%;
+    height: auto; }
+  .section-contact__input {
+    padding: 0 15px;
+    margin: 5px 0; }
+    @media screen and (min-width: 1024px) {
+      .section-contact__input {
+        padding: 0 20px; } }
+  .section-contact__input-group {
+    padding: 0 15px; }
+    .section-contact__input-group input {
+      width: 100% !important;
+      padding: 0 10px;
+      margin: 5px 0; }
+      @media screen and (min-width: 1024px) {
+        .section-contact__input-group input {
+          margin: 5px; } }
+  .section-contact__btn button {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 10px;
+    color: #FFF; }
+  .section-contact textarea {
+    margin: 0;
+    width: 100% !important;
+    height: 100px;
+    padding: 10px;
+    font-size: 15px; }

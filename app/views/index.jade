@@ -18,25 +18,65 @@ block main
     .section-content
 
       .section-content__portfolio
-        img.portfolio__img(src="http://via.placeholder.com/200x200", height="200", width="200" alt="avatar kiay bezaka" )
+        img.portfolio__img(src="images/avatar/kiadybezaka.jpg", height="200", width="200" alt="avatar kiay bezaka" )
         p.portfolio__first-name Razafindrabe
         p.portfolio__name Burel Kiady Bezaka
 
       .section-content__about
-        h2.about__title Lorem ipsum &amp; Dolor pueris
+        h2.about__title Développeur &amp; Photographe
         p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
 
   .section-content.mobile-only
 
     .section-content__about
 
-      h2.about__title Lorem ipsum &amp; Dolor pueris
+      h2.about__title Développeur &amp; Photographe
       p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
+  
   .section-album
-  .section-tarifs
+    h2.section-album__title Galerie
+    p.section-album__description Les photos que j'ai prises
+    .section-album__content.desktop-only
+      img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="album kiady bezaka")
+    .section-album__content
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+      .section-album__box-img
+        img.section-album__img(src="http://via.placeholder.com/1920x800", height="", width="" alt="album kiady bezaka" )
+
+  .section-tarif
+    .section-tarif__content
+      .section-tarif__service
+        h2 Mon tarif
+        p Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice.Sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, Cato in perfecto et spectato viro.
+        p 
+          |Mon tarif journalier est de 
+          strong X00€ HT/jours
+      .section-tarif__gear
+        h3 Fiche technique
+        ul
+          li Nikon D700 &amp; D7000
+          li Sigma APO 70-200 f2.8
+          li Sigma 24-70 f2.8
+          li Sigma 10-20 f4-5.6
+    
   .section-road
-    h2.section-road__title Lorem ipsum
-    p.section-road__description Lorem ipsum dolor tantum tribui
+    h2.section-road__title Mon parcour
+    p.section-road__description Experience professionnel
     .section-road__content
       .section-road__item
         strong.section-road__date Depuis Janvier 2017
@@ -68,61 +108,85 @@ block main
           strong Mention :
           | &nbsp;Assez-Bien
   .section-skill
-    h2.section-skill__title Lorem ipsum
-    p.section-skill__description Lorem ipsum dolor tantum tribui
+    h2.section-skill__title Mes compétences 
+    p.section-skill__description Ce que je sais faire
     .section-skill__content
       .section-skill__box
-        h3.section-skill__box-title Jade
+        h3.section-skill__box-title HTML5
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/html5.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
+        h3.section-skill__box-title CSS3
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/css3.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
+        h3.section-skill__box-title Javascript
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
-      .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="skill" )
+      
     .section-skill__separator
-      p.section-skill__subtitle Lorem ipsum
+      p.section-skill__subtitle Technologies 
     .section-skill__content
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title Windows
+        span.section-skill__box-xp OS principal
+        img.section-skill__box-img(src="images/logos/win.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title Git
+        span.section-skill__box-xp versioning
+        img.section-skill__box-img(src="images/logos/git.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title Gulp
+        span.section-skill__box-xp Automatisation
+        img.section-skill__box-img(src="images/logos/gulp.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title JQuery
+        span.section-skill__box-xp Bibliothèque Js
+        img.section-skill__box-img(src="images/logos/jquery.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title Node.js
+        span.section-skill__box-xp Serveur Js
+        img.section-skill__box-img(src="images/logos/node.jpg", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title MySql
+        span.section-skill__box-xp BDD
+        img.section-skill__box-img(src="images/logos/mysql.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
+        h3.section-skill__box-title JAVA
+        span.section-skill__box-xp 50%
+        img.section-skill__box-img(src="images/logos/java.png", height="100", width="100" alt="skill" )
       .section-skill__box
-        h3.section-skill__box-title Jade
-        span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="http://via.placeholder.com/200x200", height="100", width="100" alt="skill" )
-  
+        h3.section-skill__box-title PHP
+        span.section-skill__box-xp 60%
+        img.section-skill__box-img(src="images/logos/php.jpg", height="100", width="100" alt="skill" )
+      .section-skill__box
+        h3.section-skill__box-title Android Studio
+        span.section-skill__box-xp 50%
+        img.section-skill__box-img(src="images/logos/android.jpg", height="100", width="100" alt="skill" )
+      .section-skill__box
+        h3.section-skill__box-title Photoshop
+        span.section-skill__box-xp Retouche
+        img.section-skill__box-img(src="images/logos/ps.jpg", height="100", width="100" alt="skill" )
+      .section-skill__box
+        h3.section-skill__box-title Lightroom
+        span.section-skill__box-xp Retouche
+        img.section-skill__box-img(src="images/logos/lr.png", height="100", width="100" alt="skill" )
+  .section-contact
+    h2.section-contact__title Contact
+    form.section-contact__content(action="")
+      .section-contact__input-group
+        label.hide-only(for="name") name
+        input#name(type="text" placeholder="Votre nom" required)
+        label.hide-only(for="mail") mail
+        input#mail(type="email" placeholder="Votre adresse mail" required)
+        label.hide-only(for="subject") subject
+        input#subject(type="text" placeholder="Le sujet de votre message ..." required)
+      .section-contact__input
+        label.hide-only(for="message") message
+        textarea#message(name="message" placeholder="Votre message ici ..." required)
+      .section-contact__btn
+        button(type="submit") Envoyer
+      
 
 
 

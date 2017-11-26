@@ -65,8 +65,14 @@
       margin: 35px 20px;
     }
   }
+  &__box-img {
+    width: auto;
+    height: 100px;
+  }
   .box {
     &__img {
+      width: auto;
+      height: 100px;
     }
     &__text {
       position: absolute;
