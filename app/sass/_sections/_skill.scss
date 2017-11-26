@@ -1,6 +1,7 @@
 .section-skill {
   min-height: 400px;
   margin: 20px 0;
+  padding: 0 20px;
   text-align: center;
   h2,
   p {
@@ -27,6 +28,9 @@
     top: 0;
     transform: translate(-50%,0);
     background-color: $secondary-color;
+  }
+  &__box-xp {
+    margin: 5px 0;
   }
   &__box {
     width: 50%;

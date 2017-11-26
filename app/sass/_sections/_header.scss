@@ -8,7 +8,7 @@
   justify-content: center;
   transition: all 0.5s ease-in-out;
   @media screen and (min-width: 1024px) {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   &.sticky {
     position: fixed;
@@ -20,4 +20,18 @@
     text-transform: capitalize;
     font-size: 22px;
   }
+  &__navigation {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      min-width: 320px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    color: $secondary-color;
+  }
+
 }
