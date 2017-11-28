@@ -6770,6 +6770,13 @@ th {
 
 header {
   background-color: #008CBA; }
+  header a {
+    color: #e7e7e7;
+    margin: 0 20px; }
+    header a:hover {
+      color: white; }
+    header a:focus {
+      color: white; }
 
 footer {
   width: 100%;
@@ -6787,6 +6794,8 @@ footer {
   footer a {
     color: #e7e7e7;
     margin: 0 20px; }
+    footer a:hover {
+      color: white; }
 
 .footer__navigation {
   background-color: #008CBA;
@@ -6837,7 +6846,7 @@ h1, h2, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.2); }
   .section-content h2,
   .section-content p {
     color: #FFF; }
@@ -6861,7 +6870,7 @@ h1, h2, body {
       width: 200px;
       height: 200px;
       border-radius: 100px;
-      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2); }
       @media screen and (max-width: 480px) {
         .section-content__portfolio .portfolio__img {
           width: 150px;
@@ -6916,6 +6925,11 @@ h1, h2, body {
   .section-album p {
     color: #008CBA;
     margin: 10px 0; }
+  .section-album h2 {
+    margin: 60px 0 10px; }
+  .section-album__logo {
+    width: 150px;
+    height: auto; }
   .section-album__content {
     max-width: 1100px;
     margin: 0 auto;
@@ -6941,6 +6955,8 @@ h1, h2, body {
   .section-road p {
     color: #008CBA;
     margin: 10px 0; }
+  .section-road h2 {
+    margin: 60px 0 10px; }
   .section-road__content {
     max-width: 700px;
     margin: 0 auto;
@@ -7025,6 +7041,8 @@ h1, h2, body {
   .section-skill p {
     color: #008CBA;
     margin: 10px 0; }
+  .section-skill h2 {
+    margin: 60px 0 10px; }
   .section-skill__separator {
     max-width: 950px;
     height: 22px;
@@ -7091,6 +7109,8 @@ h1, h2, body {
   .section-tarif p {
     color: #008CBA;
     margin: 10px 0; }
+  .section-tarif h2 {
+    margin: 60px 0 10px; }
   .section-tarif__content {
     max-width: 1100px;
     margin: 0 auto;
@@ -7109,6 +7129,7 @@ h1, h2, body {
         width: 70%; } }
     .section-tarif__service h2,
     .section-tarif__service p {
+      margin: 10px 0 !important;
       text-align: center; }
       @media screen and (min-width: 1024px) {
         .section-tarif__service h2,
@@ -7120,11 +7141,12 @@ h1, h2, body {
     @media screen and (min-width: 1024px) {
       .section-tarif__gear {
         width: 30%; } }
-    .section-tarif__gear h3,
+    .section-tarif__gear h2,
     .section-tarif__gear p {
+      margin: 10px 0 !important;
       text-align: center; }
       @media screen and (min-width: 1024px) {
-        .section-tarif__gear h3,
+        .section-tarif__gear h2,
         .section-tarif__gear p {
           text-align: left; } }
     .section-tarif__gear ul {
@@ -7142,6 +7164,8 @@ h1, h2, body {
   .section-contact p {
     color: #008CBA;
     margin: 10px 0; }
+  .section-contact h2 {
+    margin: 60px 0 10px; }
   .section-contact__content {
     max-width: 800px;
     margin: 0 auto;

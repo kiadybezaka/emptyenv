@@ -1,5 +1,15 @@
 header {
   background-color: $primary-color;
+  a {
+    color: $secondary-color;
+    margin: 0 20px;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: white;
+    }
+  }
 }
 footer {
   width: 100%;
@@ -19,6 +29,9 @@ footer {
   a {
     color: $secondary-color;
     margin: 0 20px;
+    &:hover {
+      color: white;
+    }
   }
   
 }

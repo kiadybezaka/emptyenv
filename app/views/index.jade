@@ -10,10 +10,10 @@ block main
     .section-slider__content
 
       picture.product-category__img
-        source(srcset="http://via.placeholder.com/480x500", media="(max-width: 480px)")
-        source(srcset="http://via.placeholder.com/768x500", media="(max-width: 768px)")
-        source(srcset="http://via.placeholder.com/1200X500", media="(max-width: 1200px)")
-        img(src="http://via.placeholder.com/1920x500" , width="1920" , height="500" , alt="banner kiady bezaka" )
+        source(srcset="images/banner/banner-480.jpg", media="(max-width: 480px)")
+        source(srcset="images/banner/banner-768.jpg", media="(max-width: 768px)")
+        source(srcset="images/banner/banner-1200.jpg", media="(max-width: 1200px)")
+        img(src="images/banner/banner-1920.jpg" , width="1920" , height="500" , alt="banner kiady bezaka" )
 
     .section-content
 
@@ -33,30 +33,23 @@ block main
       h2.about__title Développeur &amp; Photographe
       p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
   
-  .section-album
+  .section-album#photographer
     h2.section-album__title Galerie
     p.section-album__description Les photos que j'ai prises
+    img.section-album__logo(src="images/logos/logob.png", height="500", width="200" alt="logo kiady bezaka" )
     .section-album__content.desktop-only
-      img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="album kiady bezaka")
+      img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="wedding-renhaut-diary")
     .section-album__content
       .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
+        img.section-album__img(src="images/gallery/wedding-eric-felana.jpg", height="1920", width="800" alt="wedding-eric-felana" )
       .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
+        img.section-album__img(src="images/gallery/wedding-renhaut-diary-2.jpg", height="1920", width="800" alt="wedding-renhaut-diary" )
       .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
+        img.section-album__img(src="images/gallery/wedding-rivo-mirantsoa.jpg", height="1920", width="800" alt="wedding-rivo-mirantsoa" )
       .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
+        img.section-album__img(src="images/gallery/wedding-fabrice-annie.jpg", height="1920", width="800" alt="wedding-fabrice-annie" )
       .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
-      .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
-      .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
-      .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
-      .section-album__box-img
-        img.section-album__img(src="http://via.placeholder.com/1920x800", height="1920", width="800" alt="album kiady bezaka" )
+        img.section-album__img(src="images/gallery/wedding-eric-felana-2.jpg", height="1920", width="800" alt="wedding-eric-felana-2" )
 
   .section-tarif
     .section-tarif__content
@@ -67,14 +60,14 @@ block main
           |Mon tarif journalier est de 
           strong X00€ HT/jours
       .section-tarif__gear
-        h3 Fiche technique
+        h2 Fiche technique
         ul
           li Nikon D700 &amp; D7000
           li Sigma APO 70-200 f2.8
           li Sigma 24-70 f2.8
           li Sigma 10-20 f4-5.6
     
-  .section-road
+  .section-road#developer
     h2.section-road__title Mon parcour
     p.section-road__description Experience professionnel
     .section-road__content
@@ -114,15 +107,15 @@ block main
       .section-skill__box
         h3.section-skill__box-title HTML5
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="images/logos/html5.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/html5.png", height="100", width="100" alt="html5" )
       .section-skill__box
         h3.section-skill__box-title CSS3
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="images/logos/css3.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/css3.png", height="100", width="100" alt="css3" )
       .section-skill__box
         h3.section-skill__box-title Javascript
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="js" )
       
     .section-skill__separator
       p.section-skill__subtitle Technologies 
@@ -130,48 +123,48 @@ block main
       .section-skill__box
         h3.section-skill__box-title Windows
         span.section-skill__box-xp OS principal
-        img.section-skill__box-img(src="images/logos/win.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/win.png", height="100", width="100" alt="win" )
       .section-skill__box
         h3.section-skill__box-title Git
         span.section-skill__box-xp versioning
-        img.section-skill__box-img(src="images/logos/git.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/git.png", height="100", width="100" alt="git" )
       .section-skill__box
         h3.section-skill__box-title Gulp
         span.section-skill__box-xp Automatisation
-        img.section-skill__box-img(src="images/logos/gulp.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/gulp.png", height="100", width="100" alt="gulp" )
       .section-skill__box
         h3.section-skill__box-title JQuery
         span.section-skill__box-xp Bibliothèque Js
-        img.section-skill__box-img(src="images/logos/jquery.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/jquery.png", height="100", width="100" alt="jquery" )
       .section-skill__box
         h3.section-skill__box-title Node.js
         span.section-skill__box-xp Serveur Js
-        img.section-skill__box-img(src="images/logos/node.jpg", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/node.jpg", height="100", width="100" alt="node" )
       .section-skill__box
         h3.section-skill__box-title MySql
         span.section-skill__box-xp BDD
-        img.section-skill__box-img(src="images/logos/mysql.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/mysql.png", height="100", width="100" alt="mysql" )
       .section-skill__box
         h3.section-skill__box-title JAVA
         span.section-skill__box-xp 50%
-        img.section-skill__box-img(src="images/logos/java.png", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/java.png", height="100", width="100" alt="java" )
       .section-skill__box
         h3.section-skill__box-title PHP
         span.section-skill__box-xp 60%
-        img.section-skill__box-img(src="images/logos/php.jpg", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/php.jpg", height="100", width="100" alt="php" )
       .section-skill__box
         h3.section-skill__box-title Android Studio
         span.section-skill__box-xp 50%
-        img.section-skill__box-img(src="images/logos/android.jpg", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/android.jpg", height="100", width="100" alt="android" )
       .section-skill__box
         h3.section-skill__box-title Photoshop
         span.section-skill__box-xp Retouche
-        img.section-skill__box-img(src="images/logos/ps.jpg", height="100", width="100" alt="skill" )
+        img.section-skill__box-img(src="images/logos/ps.jpg", height="100", width="100" alt="ps" )
       .section-skill__box
         h3.section-skill__box-title Lightroom
         span.section-skill__box-xp Retouche
-        img.section-skill__box-img(src="images/logos/lr.png", height="100", width="100" alt="skill" )
-  .section-contact
+        img.section-skill__box-img(src="images/logos/lr.png", height="100", width="100" alt="lr" )
+  .section-contact#contact
     h2.section-contact__title Contact
     form.section-contact__content(action="#")
       .section-contact__input-group

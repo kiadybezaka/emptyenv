@@ -11,15 +11,15 @@
     <div class="wrapper">
       <header class="section-header js-sticky-header">
         <h1><a href="#" class="section-header__logo js-test-btn">Kiady Bezaka</a></h1>
-        <div class="section-header__navigation"><a href="#" class="section-header__link">Photographe</a><a href="#" class="section-header__link">Developpeur</a><a href="#" class="section-header__link">A propos</a></div>
+        <div class="section-header__navigation"><a href="#photographer" class="section-header__link">Photographe</a><a href="#developer" class="section-header__link">Developpeur</a><a href="#contact" class="section-header__link">Contact</a></div>
       </header>
       <main>
         <div class="section-slider">
           <div class="section-slider__content">
             <picture class="product-category__img">
-              <source srcset="http://via.placeholder.com/480x500" media="(max-width: 480px)">
-              <source srcset="http://via.placeholder.com/768x500" media="(max-width: 768px)">
-              <source srcset="http://via.placeholder.com/1200X500" media="(max-width: 1200px)"><img src="http://via.placeholder.com/1920x500" width="1920" height="500" alt="banner kiady bezaka">
+              <source srcset="images/banner/banner-480.jpg" media="(max-width: 480px)">
+              <source srcset="images/banner/banner-768.jpg" media="(max-width: 768px)">
+              <source srcset="images/banner/banner-1200.jpg" media="(max-width: 1200px)"><img src="images/banner/banner-1920.jpg" width="1920" height="500" alt="banner kiady bezaka">
             </picture>
           </div>
           <div class="section-content">
@@ -39,20 +39,16 @@
             <p class="about__content">Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.</p>
           </div>
         </div>
-        <div class="section-album">
+        <div id="photographer" class="section-album">
           <h2 class="section-album__title">Galerie</h2>
-          <p class="section-album__description">Les photos que j'ai prises</p>
-          <div class="section-album__content desktop-only"><img src="images/gallery/wedding-renhaut-diary.jpg" height="1920" width="800" alt="album kiady bezaka" class="section-album__img js-parallax"></div>
+          <p class="section-album__description">Les photos que j'ai prises</p><img src="images/logos/logob.png" height="500" width="200" alt="logo kiady bezaka" class="section-album__logo">
+          <div class="section-album__content desktop-only"><img src="images/gallery/wedding-renhaut-diary.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img js-parallax"></div>
           <div class="section-album__content">
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="http://via.placeholder.com/1920x800" height="1920" width="800" alt="album kiady bezaka" class="section-album__img"></div>
+            <div class="section-album__box-img"><img src="images/gallery/wedding-eric-felana.jpg" height="1920" width="800" alt="wedding-eric-felana" class="section-album__img"></div>
+            <div class="section-album__box-img"><img src="images/gallery/wedding-renhaut-diary-2.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img"></div>
+            <div class="section-album__box-img"><img src="images/gallery/wedding-rivo-mirantsoa.jpg" height="1920" width="800" alt="wedding-rivo-mirantsoa" class="section-album__img"></div>
+            <div class="section-album__box-img"><img src="images/gallery/wedding-fabrice-annie.jpg" height="1920" width="800" alt="wedding-fabrice-annie" class="section-album__img"></div>
+            <div class="section-album__box-img"><img src="images/gallery/wedding-eric-felana-2.jpg" height="1920" width="800" alt="wedding-eric-felana-2" class="section-album__img"></div>
           </div>
         </div>
         <div class="section-tarif">
@@ -66,7 +62,7 @@
               </p>
             </div>
             <div class="section-tarif__gear">
-              <h3>Fiche technique</h3>
+              <h2>Fiche technique</h2>
               <ul>
                 <li>Nikon D700 &amp; D7000</li>
                 <li>Sigma APO 70-200 f2.8</li>
@@ -76,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="section-road">
+        <div id="developer" class="section-road">
           <h2 class="section-road__title">Mon parcour</h2>
           <p class="section-road__description">Experience professionnel</p>
           <div class="section-road__content">
@@ -110,13 +106,13 @@
           <p class="section-skill__description">Ce que je sais faire</p>
           <div class="section-skill__content">
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">HTML5</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/html5.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">HTML5</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/html5.png" height="100" width="100" alt="html5" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">CSS3</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/css3.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">CSS3</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/css3.png" height="100" width="100" alt="css3" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Javascript</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/js.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Javascript</h3><span class="section-skill__box-xp">1 an d'experience</span><img src="images/logos/js.png" height="100" width="100" alt="js" class="section-skill__box-img">
             </div>
           </div>
           <div class="section-skill__separator">
@@ -124,41 +120,41 @@
           </div>
           <div class="section-skill__content">
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Windows</h3><span class="section-skill__box-xp">OS principal</span><img src="images/logos/win.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Windows</h3><span class="section-skill__box-xp">OS principal</span><img src="images/logos/win.png" height="100" width="100" alt="win" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Git</h3><span class="section-skill__box-xp">versioning</span><img src="images/logos/git.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Git</h3><span class="section-skill__box-xp">versioning</span><img src="images/logos/git.png" height="100" width="100" alt="git" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Gulp</h3><span class="section-skill__box-xp">Automatisation</span><img src="images/logos/gulp.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Gulp</h3><span class="section-skill__box-xp">Automatisation</span><img src="images/logos/gulp.png" height="100" width="100" alt="gulp" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">JQuery</h3><span class="section-skill__box-xp">Bibliothèque Js</span><img src="images/logos/jquery.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">JQuery</h3><span class="section-skill__box-xp">Bibliothèque Js</span><img src="images/logos/jquery.png" height="100" width="100" alt="jquery" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Node.js</h3><span class="section-skill__box-xp">Serveur Js</span><img src="images/logos/node.jpg" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Node.js</h3><span class="section-skill__box-xp">Serveur Js</span><img src="images/logos/node.jpg" height="100" width="100" alt="node" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">MySql</h3><span class="section-skill__box-xp">BDD</span><img src="images/logos/mysql.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">MySql</h3><span class="section-skill__box-xp">BDD</span><img src="images/logos/mysql.png" height="100" width="100" alt="mysql" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">JAVA</h3><span class="section-skill__box-xp">50%</span><img src="images/logos/java.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">JAVA</h3><span class="section-skill__box-xp">50%</span><img src="images/logos/java.png" height="100" width="100" alt="java" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">PHP</h3><span class="section-skill__box-xp">60%</span><img src="images/logos/php.jpg" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">PHP</h3><span class="section-skill__box-xp">60%</span><img src="images/logos/php.jpg" height="100" width="100" alt="php" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Android Studio</h3><span class="section-skill__box-xp">50%</span><img src="images/logos/android.jpg" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Android Studio</h3><span class="section-skill__box-xp">50%</span><img src="images/logos/android.jpg" height="100" width="100" alt="android" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Photoshop</h3><span class="section-skill__box-xp">Retouche</span><img src="images/logos/ps.jpg" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Photoshop</h3><span class="section-skill__box-xp">Retouche</span><img src="images/logos/ps.jpg" height="100" width="100" alt="ps" class="section-skill__box-img">
             </div>
             <div class="section-skill__box">
-              <h3 class="section-skill__box-title">Lightroom</h3><span class="section-skill__box-xp">Retouche</span><img src="images/logos/lr.png" height="100" width="100" alt="skill" class="section-skill__box-img">
+              <h3 class="section-skill__box-title">Lightroom</h3><span class="section-skill__box-xp">Retouche</span><img src="images/logos/lr.png" height="100" width="100" alt="lr" class="section-skill__box-img">
             </div>
           </div>
         </div>
-        <div class="section-contact">
+        <div id="contact" class="section-contact">
           <h2 class="section-contact__title">Contact</h2>
           <form action="#" class="section-contact__content">
             <div class="section-contact__input-group">
@@ -181,9 +177,9 @@
       </main>
       <footer>
         <div class="footer__copyright">&copy; kiadybezaka - 2017</div>
-        <div class="footer__icons"><a href="#"><span class="hide-only">github</span><i class="fa fa-github"></i></a><a href="#"><span class="hide-only">linkedin</span><i class="fa fa-linkedin"></i></a><a href="#"><span class="hide-only">viadeo</span><i class="fa fa-viadeo"></i></a><a href="#"><span class="hide-only">facebook</span><i class="fa fa-facebook"></i></a><a href="#"><span class="hide-only">instagram</span><i class="fa fa-instagram"></i></a></div>
+        <div class="footer__icons"><a href="https://github.com/kiadybezaka" target="_blank"><span class="hide-only">github</span><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/kiadybezaka/" target="_blank"><span class="hide-only">linkedin</span><i class="fa fa-linkedin"></i></a><a href="http://mg.viadeo.com/fr/profile/kiadybezaka" target="_blank"><span class="hide-only">viadeo</span><i class="fa fa-viadeo"></i></a><a href="https://www.facebook.com/kiadybezakaphotography/" target="_blank"><span class="hide-only">facebook</span><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/kiadybezaka/" target="_blank"><span class="hide-only">instagram</span><i class="fa fa-instagram"></i></a></div>
       </footer>
-      <div class="footer__navigation"><a href="#" class="section-header__link">Photographe</a><a href="#" class="section-header__link">Developpeur</a><a href="#" class="section-header__link">A propos</a></div>
+      <div class="footer__navigation"><a href="#photographer" class="section-header__link">Photographe</a><a href="#developer" class="section-header__link">Developpeur</a><a href="#contact" class="section-header__link">Contact</a></div>
       <script src="scripts/app.js"></script>
     </div>
   </body>
