@@ -15,6 +15,6 @@ module.exports = function() {
 
                 $('html, body').animate({
                         scrollTop: $($.attr(this, 'href')).offset().top - 150
-                }, 500);
+                }, 800);
         });
 }
