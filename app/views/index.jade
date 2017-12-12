@@ -32,32 +32,44 @@ block main
 
       h2.about__title Développeur &amp; Photographe
       p.about__content Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro.
-  
+
   .section-album#photographer
     h2.section-album__title Galerie
     p.section-album__description Les photos que j'ai prises
     img.section-album__logo(src="images/logos/logob.png", height="500", width="200" alt="logo kiady bezaka" )
     .section-album__content.desktop-only
-      img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="wedding-renhaut-diary")
+      a(href="images/gallery/wedding-renhaut-diary.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut & Diary")
+        span.hide-only Album image
+        img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="wedding-renhaut-diary")
     .section-album__content
       .section-album__box-img
-        img.section-album__img(src="images/gallery/wedding-eric-felana.jpg", height="1920", width="800" alt="wedding-eric-felana" )
+        a(href="images/gallery/wedding-eric-felana.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric & Felana")
+          span.hide-only Album image
+          img.section-album__img(src="images/gallery/wedding-eric-felana.jpg", height="1920", width="800" alt="wedding-eric-felana" )
       .section-album__box-img
-        img.section-album__img(src="images/gallery/wedding-renhaut-diary-2.jpg", height="1920", width="800" alt="wedding-renhaut-diary" )
+        a(href="images/gallery/wedding-renhaut-diary-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut & Diary")
+          span.hide-only Album image
+          img.section-album__img(src="images/gallery/wedding-renhaut-diary-2.jpg", height="1920", width="800" alt="wedding-renhaut-diary" )
       .section-album__box-img
-        img.section-album__img(src="images/gallery/wedding-rivo-mirantsoa.jpg", height="1920", width="800" alt="wedding-rivo-mirantsoa" )
+        a(href="images/gallery/wedding-rivo-mirantsoa.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Rivo & Mirantsoa")
+          span.hide-only Album image
+          img.section-album__img(src="images/gallery/wedding-rivo-mirantsoa.jpg", height="1920", width="800" alt="wedding-rivo-mirantsoa" )
       .section-album__box-img
-        img.section-album__img(src="images/gallery/wedding-fabrice-annie.jpg", height="1920", width="800" alt="wedding-fabrice-annie" )
+        a(href="images/gallery/wedding-fabrice-annie.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Fabrice & Annie")
+          span.hide-only Album image
+          img.section-album__img(src="images/gallery/wedding-fabrice-annie.jpg", height="1920", width="800" alt="wedding-fabrice-annie" )
       .section-album__box-img
-        img.section-album__img(src="images/gallery/wedding-eric-felana-2.jpg", height="1920", width="800" alt="wedding-eric-felana-2" )
+        a(href="images/gallery/wedding-eric-felana-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric & Felana")
+          span.hide-only Album image
+          img.section-album__img(src="images/gallery/wedding-eric-felana-2.jpg", height="1920", width="800" alt="wedding-eric-felana-2" )
 
   .section-tarif
     .section-tarif__content
       .section-tarif__service
         h2 Mon tarif
         p Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice.Sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, Cato in perfecto et spectato viro.
-        p 
-          |Mon tarif journalier est de 
+        p
+          |Mon tarif journalier est de
           strong X00€ HT/jours
       .section-tarif__gear
         h2 Fiche technique
@@ -66,7 +78,7 @@ block main
           li Sigma APO 70-200 f2.8
           li Sigma 24-70 f2.8
           li Sigma 10-20 f4-5.6
-    
+
   .section-road#developer
     h2.section-road__title Mon parcour
     p.section-road__description Experience professionnel
@@ -76,7 +88,7 @@ block main
         p.section-road__name Proximity BBDO Indian Ocean
         p.section-road__job-title Developpeur Front-End
         p.section-road__job-description
-          strong Technologie : 
+          strong Technologie :
           | &nbsp;Node.js, Jade, Gulp, Sass, HTML 5, CSS 3, JQuery, Sitecore
       .section-road__item
         strong.section-road__date Depuis Décembre 2016
@@ -87,7 +99,7 @@ block main
         p.section-road__name ARIARY.NET
         p.section-road__job-title Developpeur web
         p.section-road__job-description
-          strong Technologie : 
+          strong Technologie :
           | &nbsp;Symfony, HTML 5, CSS 3, JQuery
       .section-road__item
         strong.section-road__date 2013-2016
@@ -101,7 +113,7 @@ block main
           strong Mention :
           | &nbsp;Assez-Bien
   .section-skill
-    h2.section-skill__title Mes compétences 
+    h2.section-skill__title Mes compétences
     p.section-skill__description Ce que je sais faire
     .section-skill__content
       .section-skill__box
@@ -116,9 +128,9 @@ block main
         h3.section-skill__box-title Javascript
         span.section-skill__box-xp 1 an d'experience
         img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="js" )
-      
+
     .section-skill__separator
-      p.section-skill__subtitle Technologies 
+      p.section-skill__subtitle Technologies
     .section-skill__content
       .section-skill__box
         h3.section-skill__box-title Windows
@@ -179,7 +191,7 @@ block main
         textarea#message(name="message" placeholder="Votre message ici ..." required)
       .section-contact__btn
         button(type="submit") Envoyer
-      
+
 
 
 

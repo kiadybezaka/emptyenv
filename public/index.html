@@ -9,6 +9,7 @@
     <link rel="icon" href="images/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css">
   </head>
   <body>
     <div class="wrapper">
@@ -45,13 +46,13 @@
         <div id="photographer" class="section-album">
           <h2 class="section-album__title">Galerie</h2>
           <p class="section-album__description">Les photos que j'ai prises</p><img src="images/logos/logob.png" height="500" width="200" alt="logo kiady bezaka" class="section-album__logo">
-          <div class="section-album__content desktop-only"><img src="images/gallery/wedding-renhaut-diary.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img js-parallax"></div>
+          <div class="section-album__content desktop-only"><a href="images/gallery/wedding-renhaut-diary.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut &amp; Diary"><span class="hide-only">Album image</span><img src="images/gallery/wedding-renhaut-diary.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img js-parallax"></a></div>
           <div class="section-album__content">
-            <div class="section-album__box-img"><img src="images/gallery/wedding-eric-felana.jpg" height="1920" width="800" alt="wedding-eric-felana" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="images/gallery/wedding-renhaut-diary-2.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="images/gallery/wedding-rivo-mirantsoa.jpg" height="1920" width="800" alt="wedding-rivo-mirantsoa" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="images/gallery/wedding-fabrice-annie.jpg" height="1920" width="800" alt="wedding-fabrice-annie" class="section-album__img"></div>
-            <div class="section-album__box-img"><img src="images/gallery/wedding-eric-felana-2.jpg" height="1920" width="800" alt="wedding-eric-felana-2" class="section-album__img"></div>
+            <div class="section-album__box-img"><a href="images/gallery/wedding-eric-felana.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric &amp; Felana"><span class="hide-only">Album image</span><img src="images/gallery/wedding-eric-felana.jpg" height="1920" width="800" alt="wedding-eric-felana" class="section-album__img"></a></div>
+            <div class="section-album__box-img"><a href="images/gallery/wedding-renhaut-diary-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut &amp; Diary"><span class="hide-only">Album image</span><img src="images/gallery/wedding-renhaut-diary-2.jpg" height="1920" width="800" alt="wedding-renhaut-diary" class="section-album__img"></a></div>
+            <div class="section-album__box-img"><a href="images/gallery/wedding-rivo-mirantsoa.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Rivo &amp; Mirantsoa"><span class="hide-only">Album image</span><img src="images/gallery/wedding-rivo-mirantsoa.jpg" height="1920" width="800" alt="wedding-rivo-mirantsoa" class="section-album__img"></a></div>
+            <div class="section-album__box-img"><a href="images/gallery/wedding-fabrice-annie.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Fabrice &amp; Annie"><span class="hide-only">Album image</span><img src="images/gallery/wedding-fabrice-annie.jpg" height="1920" width="800" alt="wedding-fabrice-annie" class="section-album__img"></a></div>
+            <div class="section-album__box-img"><a href="images/gallery/wedding-eric-felana-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric &amp; Felana"><span class="hide-only">Album image</span><img src="images/gallery/wedding-eric-felana-2.jpg" height="1920" width="800" alt="wedding-eric-felana-2" class="section-album__img"></a></div>
           </div>
         </div>
         <div class="section-tarif">
@@ -59,10 +60,7 @@
             <div class="section-tarif__service">
               <h2>Mon tarif</h2>
               <p>Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice.Sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, Cato in perfecto et spectato viro.</p>
-              <p>
-                 
-                Mon tarif journalier est de <strong>X00€ HT/jours</strong>
-              </p>
+              <p>Mon tarif journalier est de<strong>X00€ HT/jours</strong></p>
             </div>
             <div class="section-tarif__gear">
               <h2>Fiche technique</h2>
@@ -82,7 +80,7 @@
             <div class="section-road__item"><strong class="section-road__date">Depuis Janvier 2017</strong>
               <p class="section-road__name">Proximity BBDO Indian Ocean</p>
               <p class="section-road__job-title">Developpeur Front-End</p>
-              <p class="section-road__job-description"><strong>Technologie : </strong>&nbsp;Node.js, Jade, Gulp, Sass, HTML 5, CSS 3, JQuery, Sitecore</p>
+              <p class="section-road__job-description"><strong>Technologie :</strong>&nbsp;Node.js, Jade, Gulp, Sass, HTML 5, CSS 3, JQuery, Sitecore</p>
             </div>
             <div class="section-road__item"><strong class="section-road__date">Depuis Décembre 2016</strong>
               <p class="section-road__name">BICI</p>
@@ -91,7 +89,7 @@
             <div class="section-road__item"><strong class="section-road__date">Juillet - Novembre 2016</strong>
               <p class="section-road__name">ARIARY.NET</p>
               <p class="section-road__job-title">Developpeur web</p>
-              <p class="section-road__job-description"><strong>Technologie : </strong>&nbsp;Symfony, HTML 5, CSS 3, JQuery</p>
+              <p class="section-road__job-description"><strong>Technologie :</strong>&nbsp;Symfony, HTML 5, CSS 3, JQuery</p>
             </div>
             <div class="section-road__item"><strong class="section-road__date">2013-2016</strong>
               <p class="section-road__name">Licence en Web et Design</p>
@@ -105,7 +103,7 @@
           </div>
         </div>
         <div class="section-skill">
-          <h2 class="section-skill__title">Mes compétences </h2>
+          <h2 class="section-skill__title">Mes compétences</h2>
           <p class="section-skill__description">Ce que je sais faire</p>
           <div class="section-skill__content">
             <div class="section-skill__box">
@@ -119,7 +117,7 @@
             </div>
           </div>
           <div class="section-skill__separator">
-            <p class="section-skill__subtitle">Technologies </p>
+            <p class="section-skill__subtitle">Technologies</p>
           </div>
           <div class="section-skill__content">
             <div class="section-skill__box">
