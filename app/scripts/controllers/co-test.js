@@ -21,4 +21,13 @@ module.exports = function() {
     showImageNumberLabel: true,
     albumLabel:	"Image %1 sur %2"
   })
+
+  $('.lb-image').attr('alt','lightbox image');
+
+  $('.lb-prev').append("<span class='hide-only'>no text</span>");
+
+  $('.lb-next').append("<span class='hide-only'>no text</span>");
+
+  $('.lb-cancel').append("<span class='hide-only'>no text</span>");
+
 }
