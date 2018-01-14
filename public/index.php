@@ -1,3 +1,26 @@
+<?php
+if(isset($_POST['name']) && isset($_POST['subject']) && isset($_POST['content'])) {
+	$to = "kiadyrazafindrabe@gmail.com";
+	$subject = $_POST["subject"];
+
+	$message = "
+	<html>
+	<head>
+	<title>HTML email</title>
+	</head>
+	<body>
+	<p>".$_POST["content"]."</p>
+	</body>
+	</html>
+	";
+
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+	$headers .= 'From: <'.$_POST["mail"].'>' . "\r\n";
+
+	mail($to,$subject,$message,$headers);
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
