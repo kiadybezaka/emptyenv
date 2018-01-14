@@ -179,19 +179,20 @@ block main
 
   .section-contact#contact
     h2.section-contact__title Contact
-    form.section-contact__content(action="#")
+    form.section-contact__content(action='#', method='POST')
       .section-contact__input-group
-        label.hide-only(for="name") name
-        input#name(type="text" placeholder="Votre nom" required)
-        label.hide-only(for="mail") mail
-        input#mail(type="email" placeholder="Votre adresse mail" required)
-        label.hide-only(for="subject") subject
-        input#subject(type="text" placeholder="Le sujet de votre message ..." required)
+        label.hide-only(for='name') name
+        input#name(name='name', type='text', placeholder='Votre nom', required='')
+        label.hide-only(for='mail') mail
+        input#mail(name='mail', type='email', placeholder='Votre adresse mail', required='')
+        label.hide-only(for='subject') subject
+        input#subject(name='subject', type='text', placeholder='Le sujet de votre message ...', required='')
       .section-contact__input
-        label.hide-only(for="message") message
-        textarea#message(name="message" placeholder="Votre message ici ..." required)
+        label.hide-only(for='message') message
+        textarea#message(name='content', placeholder='Votre message ici ...', required='')
       .section-contact__btn
-        button(type="submit") Envoyer
+        button(type='submit') Envoyer
+
   
 
 
