@@ -1,9 +1,19 @@
 header {
   background-color: $primary-color;
+  a {
+    color: $secondary-color;
+    margin: 0 20px;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: white;
+    }
+  }
 }
 footer {
   width: 100%;
-  height: 200px;
+  height: 260px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -19,8 +29,27 @@ footer {
   a {
     color: $secondary-color;
     margin: 0 20px;
+    &:hover {
+      color: white;
+    }
   }
 
+}
+.footer__navigation {
+  background-color: $primary-color;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 .hide-only {
   display: none;
@@ -29,5 +58,10 @@ footer {
   width:100%;
   overflow-x: hidden;
 }
-
+.desktop-only {
+  display: none!important;
+  @media screen and (min-width: 1024px) {
+    display: flex!important;
+  }
+}
 

@@ -1,11 +1,15 @@
 .section-skill {
   min-height: 400px;
   margin: 20px 0;
+  padding: 0 20px;
   text-align: center;
   h2,
   p {
     color: $primary-color;
     margin: 10px 0;
+  }
+  h2 {
+    margin: 60px 0 10px;
   }
   &__title {
 
@@ -27,6 +31,9 @@
     top: 0;
     transform: translate(-50%,0);
     background-color: $secondary-color;
+  }
+  &__box-xp {
+    margin: 5px 0;
   }
   &__box {
     width: 50%;
@@ -61,8 +68,14 @@
       margin: 35px 20px;
     }
   }
+  &__box-img {
+    width: auto;
+    height: 100px;
+  }
   .box {
     &__img {
+      width: auto;
+      height: 100px;
     }
     &__text {
       position: absolute;

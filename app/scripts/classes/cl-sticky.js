@@ -61,10 +61,11 @@ var Sticky = function () {
     $(window).scroll( function () {
       var currentScroll = $(this).scrollTop();
       if (currentScroll > previousScroll) {
-        $(element).removeClass('sticky');
+        //$(element).removeClass('sticky');
       } else {
-        scrollHandler(offset, element)
+        //scrollHandler(offset, element)
       }
+      scrollHandler(offset, element)
       previousScroll = currentScroll;
     });
   };
