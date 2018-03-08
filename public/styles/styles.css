@@ -7228,6 +7228,53 @@ h1, h2, body {
     margin: 10px 0; }
   .section-bjj h2 {
     margin: 60px 0 10px; }
+  .section-bjj__content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .section-bjj__content-slide {
+    width: 100%;
+    padding: 10px 0; }
+    @media screen and (min-width: 480px) {
+      .section-bjj__content-slide {
+        padding: 50px 0; } }
+    .section-bjj__content-slide .fa {
+      font-size: 40px;
+      cursor: pointer;
+      color: #008CBA; }
+    .section-bjj__content-slide .slick-prev {
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .section-bjj__content-slide .slick-next {
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .section-bjj__content-slide .slick-disabled {
+      display: none !important; }
+  .section-bjj__box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px; }
+  .section-bjj__box-title {
+    font-weight: 600;
+    color: #008CBA; }
+  .section-bjj__box-img {
+    padding: 15px 0; }
+  .section-bjj__box-medal {
+    font-weight: 500;
+    font-size: 18px; }
+  .section-bjj__box-belt, .section-bjj__box-category {
+    font-weight: 500;
+    color: #008CBA; }
 
 .section-contact {
   min-height: 200px;

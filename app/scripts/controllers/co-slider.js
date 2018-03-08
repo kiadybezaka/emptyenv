@@ -52,4 +52,28 @@ module.exports = function () {
       arrows: true
     });
     fixBrokenAreaReference('.section-road__item');
+
+  var bjjSlider = '.js-slide-bjj-medal';
+
+  $(bjjSlider).slick({
+    rows: 1,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    infinite: false,
+    nextArrow: '<i class="fa slick-next fa-angle-right"></i>',
+    prevArrow: '<i class="fa slick-prev fa-angle-left"></i>',
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  fixBrokenAreaReference('.section-bjj__box');
 };
