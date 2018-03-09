@@ -76,4 +76,18 @@ module.exports = function () {
     ]
   });
   fixBrokenAreaReference('.section-bjj__box');
+
+  var certifSlider = '.js-slide-certification';
+  $(certifSlider).slick({
+    rows: 1,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    nextArrow: '<i class="fa slick-next fa-angle-right"></i>',
+    prevArrow: '<i class="fa slick-prev fa-angle-left"></i>',
+    arrows: true
+  });
+  fixBrokenAreaReference('.certification__content-item');
 };

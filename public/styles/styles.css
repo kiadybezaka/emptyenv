@@ -7276,6 +7276,87 @@ h1, h2, body {
     font-weight: 500;
     color: #008CBA; }
 
+.section-other {
+  min-height: 400px;
+  margin: 20px 0;
+  padding: 0 20px;
+  text-align: center; }
+  .section-other h2,
+  .section-other p {
+    color: #008CBA;
+    margin: 10px 0; }
+  .section-other h2 {
+    margin: 60px 0 10px; }
+  .section-other__content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .section-other__certification {
+    width: 100%; }
+    @media screen and (min-width: 480px) {
+      .section-other__certification {
+        width: 40%; } }
+    .section-other__certification .certification__item {
+      max-width: 300px;
+      margin: 35px auto; }
+      .section-other__certification .certification__item h3 {
+        margin: 0 auto !important; }
+    .section-other__certification .certification__content h4 {
+      font-size: 20px;
+      margin: 10px auto !important; }
+    .section-other__certification .certification__content .fa {
+      font-size: 20px;
+      cursor: pointer;
+      color: #008CBA; }
+    .section-other__certification .certification__content .slick-prev {
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .section-other__certification .certification__content .slick-next {
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .section-other__certification .certification__content .slick-disabled {
+      display: none !important; }
+    .section-other__certification .certification__title {
+      max-width: 250px;
+      margin: 0 auto; }
+    .section-other__certification .certification__content-title {
+      max-width: 250px; }
+    .section-other__certification .certification__content-slide-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .section-other__fun {
+    width: 100%;
+    text-align: center; }
+    @media screen and (min-width: 480px) {
+      .section-other__fun {
+        width: 60%;
+        text-align: left;
+        padding: 35px 0; } }
+    .section-other__fun h3 {
+      margin: 0; }
+    .section-other__fun .fun__album {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .section-other__fun .fun__album img {
+        padding: 5px;
+        width: 100%;
+        height: auto; }
+    .section-other__fun .fun__album-img {
+      width: 33%; }
+
 .section-contact {
   min-height: 200px;
   margin: 20px 0 60px;
