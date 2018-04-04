@@ -6,41 +6,22 @@ var _sliders = require('../classes/cl-slider');
 module.exports = function () {
 
   'use strict';
-
-
-  ////////////////////////////////////////////
-  //----- carousel for homepage banner ----//
-  //////////////////////////////////////////
-    var homeBanner = '.js-slider-banner';
-    //initialize slick.js
-    $(homeBanner).slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      fade: true,
-      speed: 500,
-      cssEase: 'linear',
-      dots: false,
-      center: true,
-      infinite: true,
-      arrows: false
+  
+  // fix the broken aria reference test.
+  var fixBrokenAreaReference = function (className) {
+    $(className).each(function () {
+      const $slide = $(this);
+      if ($slide.attr('aria-describedby')) { // ignore extra/cloned slides
+        $(this).attr('id', $slide.attr('aria-describedby'));
+      }
     });
-    //////////////////////////////////////
+  }
+
+  ////////////////////////////////////////
   //----- carousel for road slider ----//
   //////////////////////////////////////
+    
     var roadSlider = '.js-slide-road';
-
-    var fixBrokenAreaReference = function(className) {
-    // fix the broken aria reference test.
-      $(className).each(function() {
-        const $slide = $(this);
-        if ($slide.attr('aria-describedby')) { // ignore extra/cloned slides
-          $(this).attr('id', $slide.attr('aria-describedby'));
-        }
-      });
-    }
-
     //initialize slick.js
     $(roadSlider).slick({
       rows: 1,
@@ -51,7 +32,7 @@ module.exports = function () {
       infinite: false,
       arrows: true
     });
-    fixBrokenAreaReference('.section-road__item');
+    //fixBrokenAreaReference('.section-road__item');
 
   var bjjSlider = '.js-slide-bjj-medal';
 
@@ -75,7 +56,7 @@ module.exports = function () {
       }
     ]
   });
-  fixBrokenAreaReference('.section-bjj__box');
+  //fixBrokenAreaReference('.section-bjj__box');
 
   var certifSlider = '.js-slide-certification';
   $(certifSlider).slick({
@@ -89,5 +70,5 @@ module.exports = function () {
     prevArrow: '<i class="fa slick-prev fa-angle-left"></i>',
     arrows: true
   });
-  fixBrokenAreaReference('.certification__content-item');
+  //fixBrokenAreaReference('.certification__content-item');
 };
