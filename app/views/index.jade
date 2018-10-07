@@ -36,62 +36,64 @@ block main
   .section-album#photographer
     h2.section-album__title Galerie
     p.section-album__description Les photos que j'ai prises
-    img.section-album__logo(src="images/logos/logob.png", height="500", width="200" alt="logo kiady bezaka" )
     .section-album__content.desktop-only
-      a(href="images/gallery/wedding-eric-felana.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut & Diary")
+      a(href='images/gallery/couple-ethienne-sarah.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
         span.hide-only Album image
-        img.section-album__img.js-parallax(src="images/gallery/wedding-renhaut-diary.jpg", height="1920", width="800" alt="wedding-renhaut-diary")
+        img.section-album__img.js-parallax(src='images/gallery/tiny/couple-ethienne-sarah.jpg', height='1920', width='800', alt='couple-ethienne-sarah')
+              
     .section-album__content
       .section-album__box-img
-        a(href="images/gallery/wedding-eric-felana.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric & Felana")
+        a(href='images/gallery/portrait-enfant.jpg', data-lightbox='gallery', data-title='Portrait - Enfant')
           span.hide-only Album image
-          img.section-album__img(src="images/gallery/wedding-eric-felana.jpg", height="1920", width="800" alt="wedding-eric-felana" )
+          img.section-album__img(src='images/gallery/tiny/portrait-enfant.jpg', height='1920', width='800', alt='portrait-enfant')
+                  
       .section-album__box-img
-        a(href="images/gallery/wedding-renhaut-diary-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Renhaut & Diary")
+        a(href='images/gallery/couple-ethienne-sarah-2.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
           span.hide-only Album image
-          img.section-album__img(src="images/gallery/wedding-renhaut-diary-2.jpg", height="1920", width="800" alt="wedding-renhaut-diary" )
+          img.section-album__img(src='images/gallery/tiny/couple-ethienne-sarah-2.jpg', height='1920', width='800', alt='couple-ethienne-sarah-2')
+                
       .section-album__box-img
-        a(href="images/gallery/wedding-rivo-mirantsoa.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Rivo & Mirantsoa")
+        a(href='images/gallery/portrait-kenny.jpg', data-lightbox='gallery', data-title='Portrait - Kenny')
           span.hide-only Album image
-          img.section-album__img(src="images/gallery/wedding-rivo-mirantsoa.jpg", height="1920", width="800" alt="wedding-rivo-mirantsoa" )
+          img.section-album__img(src='images/gallery/tiny/portrait-kenny.jpg', height='1920', width='800', alt='portrait-kenny')
+                  
       .section-album__box-img
-        a(href="images/gallery/wedding-fabrice-annie.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Fabrice & Annie")
+        a(href='images/gallery/portrait-njivinah.jpg', data-lightbox='gallery', data-title='Portrait - Njivinah')
           span.hide-only Album image
-          img.section-album__img(src="images/gallery/wedding-fabrice-annie.jpg", height="1920", width="800" alt="wedding-fabrice-annie" )
+          img.section-album__img(src='images/gallery/tiny/portrait-njivinah.jpg', height='1920', width='800', alt='portrait-njivinah')
+              
       .section-album__box-img
-        a(href="images/gallery/wedding-eric-felana-2.jpg" data-lightbox="wedding-renhaut-diary" data-title="Wedding - Eric & Felana")
+        a(href='images/gallery/portrait-miss-earth.jpg', data-lightbox='gallery', data-title='Portrait - Miss Earth')
           span.hide-only Album image
-          img.section-album__img(src="images/gallery/wedding-eric-felana-2.jpg", height="1920", width="800" alt="wedding-eric-felana-2" )
+          img.section-album__img(src='images/gallery/tiny/portrait-miss-earth.jpg', height='1920', width='800', alt='portrait-miss-earth')
 
   .section-tarif
     .section-tarif__content
       .section-tarif__service
         h2 Mon tarif
         p Concernant mes prestations photographiques, je vous propose un tarif abordable avec un rapport qualité-prix exceptionnel. Réaliser les photos dont vous aviez rêvés et capturer vos emotions restent mes 2 principaux objectifs. Guider par la passion et ma motivation, je vous garantis des superbes photos.
-        p
-          |Mon tarif journalier minimum est de &nbsp;
-          strong XXX€ HT/jours
+        
       .section-tarif__gear
         h2 Fiche technique
         ul
-          li Nikon D700 &amp; D7000
-          li Sigma APO 70-200 f2.8
-          li Sigma 24-70 f2.8
-          li Sigma 10-20 f4-5.6
+          li Nikon D700
+          li Nikkor 24mm f2.8
+          li Nikkor 50mm f1.8
+          li Nikkor 85mm f1.8
 
   .section-road#developer
     h2.section-road__title Mon parcours
     p.section-road__description Experience professionnel
     .section-road__content
       .section-road__item
-        strong.section-road__date Depuis Janvier 2017
+        strong.section-road__date Depuis Décembre 2016
         p.section-road__name Proximity BBDO Indian Ocean
         p.section-road__job-title Developpeur Front-End
         p.section-road__job-description
           strong Technologie :
           | &nbsp;Node.js, Jade, Gulp, Sass, HTML 5, CSS 3, JQuery, Sitecore
       .section-road__item
-        strong.section-road__date Depuis Décembre 2016
+        strong.section-road__date Depuis Novembre 2016
         p.section-road__name BICI
         p.section-road__job-title iT-Consultant
       .section-road__item
@@ -118,16 +120,20 @@ block main
     .section-skill__content
       .section-skill__box
         h3.section-skill__box-title HTML5
-        span.section-skill__box-xp 1 an d'experience
+        span.section-skill__box-xp 2 ans d'experience
         img.section-skill__box-img(src="images/logos/html5.png", height="100", width="100" alt="html5" )
       .section-skill__box
         h3.section-skill__box-title CSS3
-        span.section-skill__box-xp 1 an d'experience
+        span.section-skill__box-xp 2 ans d'experience
         img.section-skill__box-img(src="images/logos/css3.png", height="100", width="100" alt="css3" )
       .section-skill__box
         h3.section-skill__box-title Javascript
-        span.section-skill__box-xp 1 an d'experience
+        span.section-skill__box-xp 2 ans d'experience
         img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="js" )
+      .section-skill__box
+        h3.section-skill__box-title ReactJS
+        span.section-skill__box-xp 1 an d'experience
+        img.section-skill__box-img(src="images/logos/react.png", height="100", width="100" alt="react" )
 
     .section-skill__separator
       p.section-skill__subtitle Technologies
@@ -165,7 +171,7 @@ block main
         span.section-skill__box-xp Développement
         img.section-skill__box-img(src="images/logos/php.jpg", height="100", width="100" alt="php" )
       .section-skill__box
-        h3.section-skill__box-title Android Studio
+        h3.section-skill__box-title Android
         span.section-skill__box-xp Développement
         img.section-skill__box-img(src="images/logos/android.jpg", height="100", width="100" alt="android" )
       .section-skill__box
@@ -197,17 +203,24 @@ block main
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
+            .section-bjj__box-title Mauritius Open No Gi 2018
+            .section-bjj__box-medal Médaille d'or
+            img.section-bjj__box-img(src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
+            .section-bjj__box-category Catégorie : -88kg
+            .section-bjj__box-belt Ceinture : Blanche
+        .section-bjj__box
+          .section-bjj__box-item
             .section-bjj__box-title Mauritius National 2017
             .section-bjj__box-medal Médaille d'or
-            img.section-bjj__box-img(src="images/medal/mu-nat-bjj-kiadybezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
-            .section-bjj__box-category Catégorie : -88kg
+            img.section-bjj__box-img(src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
+            .section-bjj__box-category Catégorie : -85kg
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
             .section-bjj__box-title ARGI competition 2017
             .section-bjj__box-medal Médaille d'argent
-            img.section-bjj__box-img(src="images/medal/argi-bjj-kiadybezaka.png", height="200", width="200" alt="argi kiady bezaka jiujitsu" )
-            .section-bjj__box-category Catégorie : -88kg
+            img.section-bjj__box-img(src="images/medal/arg-kiady-bezaka.png", height="200", width="200" alt="argi kiady bezaka jiujitsu" )
+            .section-bjj__box-category Catégorie : -87kg
             .section-bjj__box-belt Ceinture : Blanche
 
   .section-other#other
@@ -215,8 +228,9 @@ block main
     p.section-other__description "If you can dream it, you can do it ...."
     .section-other__content
       .section-other__certification
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;FreeCodeCamp&nbsp;
         .certification__item
-          h3.certification__title FreeCodeCamp
           .certification__content.js-slide-certification
             .certification__content-item
               a.certification__content-slide-item(href="https://www.freecodecamp.org/kiadybezaka/front-end-certification" target="_blank" rel="noopener noreferrer")
@@ -230,15 +244,17 @@ block main
               a.certification__content-slide-item(href="https://www.freecodecamp.org/kiadybezaka/back-end-certification" target="_blank" rel="noopener noreferrer")
                 h4.certification__title Back End Development Certification
                 img.certification__img(src="images/certif/back-end-certification-kiadybezaka.png", height="200", width="200" alt="back end certification kiady bezaka" )
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;Jiu Jitsu Bresilien&nbsp;
         .certification__item
-          h3.certification__title Jiu Jitsu Bresilien
           .certification__content.js-slide-certification
             .certification__content-item
               a.certification__content-slide-item(href="https://sjjif.com/" target="_blank" rel="noopener noreferrer")
                 h4.certification__title International Referee Certification
                 img.certification__img(src="images/certif/referee-bjj-kiadybezaka.jpg", height="200", width="200" alt="certif" )
       .section-other__fun
-        h3.fun__title Front End Mentor
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;Front End Mentor&nbsp;
         p.fun__text.sr-only Eodem tempore etiam Hymetii praeclarae indolis viri negotium..
         .fun__album
           a.fun__album-img(href="https://www.linkedin.com/in/thedaviddias/" target="_blank" rel="noopener noreferrer")
@@ -247,7 +263,8 @@ block main
             img(src="images/mentor/ikhlass.jpg", height="200", width="200" alt="ikhlaas subratty" )
           a.fun__album-img(href="https://www.linkedin.com/in/geoffrey-signorato-2475268a/" target="_blank" rel="noopener noreferrer")
             img(src="images/mentor/geoffrey.jpg", height="200", width="200" alt="geoffrey signorato" )
-        h3.fun__title Jiu Jitsu Brésilien
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;Jiu Jitsu Brésilien&nbsp;
         p.fun__text.sr-only Eodem tempore etiam Hymetii praeclarae indolis viri negotium..
         .fun__album
           a.fun__album-img(href="http://ahjotrainingcenter.fi/ohjaajat/delcio-pereira/" target="_blank" rel="noopener noreferrer")

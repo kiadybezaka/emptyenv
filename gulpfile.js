@@ -81,7 +81,4 @@ gulp.task('default', function(callback) {
   runSequence(['sass', 'jade', 'scripts', 'watch','server','uri'],
     callback
   )
-  /*runSequence(['sass', 'jade', 'scripts', 'watch','browserSync'],
-    callback
-  )*/
 })

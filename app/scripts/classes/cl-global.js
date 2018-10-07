@@ -1,0 +1,28 @@
+
+var JsGlobal = function() {
+
+    //////////////////////
+    // PRIVATE VARIABLE //
+    //////////////////////
+
+    var instance = this;
+
+
+    //////////////////////
+    // PUBLIC VARIABLES //
+    //////////////////////
+
+ 
+    ////////////////////
+    // PUBLIC METHODS //
+    ////////////////////
+
+
+}
+
+///////////////
+// NAMESPACE //
+///////////////
+module.exports = new JsGlobal();
+
+
