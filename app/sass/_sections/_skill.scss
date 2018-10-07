@@ -3,20 +3,6 @@
   margin: 20px 0;
   padding: 0 20px;
   text-align: center;
-  h2,
-  p {
-    color: $primary-color;
-    margin: 10px 0;
-  }
-  h2 {
-    margin: 60px 0 10px;
-  }
-  &__title {
-
-  }
-  &__description {
-
-  }
   &__separator {
     max-width: 950px;
     height: 22px;
@@ -28,8 +14,8 @@
     min-width: 100px;
     position: absolute;
     left: 50%;
-    top: 0;
-    transform: translate(-50%,0);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: $secondary-color;
   }
   &__box-xp {
@@ -83,6 +69,5 @@
       left: 50%;
       transform: translate(-50%,0);
     }
-
   }
 }

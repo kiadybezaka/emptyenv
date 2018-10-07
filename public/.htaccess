@@ -1,1 +1,6 @@
 DirectoryIndex index.html
+
+RewriteEngine On
+RewriteRule ^(css|images|js|fonts) - [L]
+RewriteRule ^home$ index.html [L]
+

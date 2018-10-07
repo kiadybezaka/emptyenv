@@ -3,20 +3,6 @@
   margin: 20px 0;
   padding: 0 20px;
   text-align: center;
-  h2,
-  p {
-    color: $primary-color;
-    margin: 10px 0;
-  }
-  h2 {
-    margin: 60px 0 10px;
-  }
-  &__title {
-
-  }
-  &__description {
-
-  }
   &__content {
     max-width: 950px;
     margin: 0 auto;
@@ -27,20 +13,16 @@
   }
   &__certification {
     width: 100%;
-    @media screen and (min-width: 768px)  {
-      width: 40%;
-    }
     .certification__item {
       h3 {
         margin: 0 auto!important;
       }
-      max-width: 300px;
       margin: 35px auto;
     }
-    .certification__img {
-    }
     .certification__content {
-
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       h4 {
         font-size: 20px;
         margin: 10px auto!important;
@@ -85,15 +67,19 @@
     width: 100%;
     text-align: center;
     @media screen and (min-width: 480px)  {
-      width: 60%;
       text-align: left;
       padding: 35px 0;
     }
     h3 {
       margin: 0;
     }
+    .section-skill__subtitle {
+      @media screen and (min-width: 480px)  {
+        font-size: 24px;
+      }
+    }
     .fun__album {
-      margin: 10px 0;
+      margin: 50px 0;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -105,7 +91,10 @@
       }
     }
     .fun__album-img {
-      width: 33%;
+      width: 100%;
+      @media screen and (min-width: 480px)  {
+        width: 33%;
+      }
     }
   }
 }

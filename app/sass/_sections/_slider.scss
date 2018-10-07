@@ -1,16 +1,10 @@
-.section-slider{
+.section-slider {
   position: relative;
   padding: 0;
   width: 100%;
   margin: 0 auto;
-  @media screen and (min-width: 1024px) {
-    //padding: 20px 0;
-  }
-  &__content{
-    
-    img {
-    }
-    
+  h2,p {
+    color: $secondary-color;
   }
 }
 

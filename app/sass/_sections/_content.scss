@@ -10,10 +10,6 @@
   flex-direction: column;
   justify-content: center;
   background-color:rgba(0,0,0,0.2);
-  h2,
-  p {
-    color: $secondary-color;
-  }
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;

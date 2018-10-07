@@ -3,15 +3,6 @@
   margin: 20px 0 60px;
   padding: 0 20px;
   text-align: center;
-  h3,
-  h2,
-  p {
-    color: $primary-color;
-    margin: 10px 0;
-  }
-  h2 {
-    margin: 60px 0 10px;
-  }
   &__content {
     max-width: 800px;
     margin: 0 auto;
@@ -26,7 +17,6 @@
     @media screen and (min-width: 1024px) {
       flex-direction: row;
     }
-    
   }
   &__img {
     width: 100%; 
@@ -68,5 +58,4 @@
     padding: 10px;
     font-size: 15px;
   }
-  
 }
