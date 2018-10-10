@@ -1,0 +1,76 @@
+extends _base/layout.jade
+
+block vars
+
+  - title = 'Kiady Bezaka Gallery'
+
+block main
+  .section-slider
+
+    .section-slider__content
+
+      picture.product-category__img
+        source(srcset="images/banner/banner-480.jpg", media="(max-width: 480px)")
+        source(srcset="images/banner/banner-768.jpg", media="(max-width: 768px)")
+        source(srcset="images/banner/banner-1200.jpg", media="(max-width: 1200px)")
+        img(src="images/banner/banner-1920.jpg" , width="1920" , height="500" , alt="banner kiady bezaka" )
+
+    .section-content
+
+      .section-content__portfolio
+        img.portfolio__img(src="images/avatar/kiadybezaka.jpg", height="200", width="200" alt="avatar kiay bezaka" )
+        p.portfolio__first-name Razafindrabe
+        p.portfolio__name Burel Kiady Bezaka
+
+      .section-content__about
+        h2.about__title Développeur &amp; Photographe
+        p.about__content Je m'appelle Razafindrabe Burel Kiady Bezaka et je suis  passionné par le web et la photographie. Développeur Front End après l'obtention de mon diplôme de Licence en Web et Design à l'IT University en 2016 et Photographe individuel depuis 2015. Si mon profil vous intéresse, n'hésitez pas à me contacter.
+
+  .section-content.mobile-only
+
+    .section-content__about
+
+      h2.about__title Développeur &amp; Photographe
+      p.about__content Je m'appelle Razafindrabe Burel Kiady Bezaka et je suis passionné par le web et la photographie. Développeur Front End après l'obtention de mon diplôme de Licence en Web et Design à l'IT University en 2016 et Photographe individuel depuis 2015. Si mon profil vous intéresse, n'hésitez pas à me contacter.
+
+  .section-album#photographer
+    h2.section-album__title Galerie
+    p.section-album__description Les photos que j'ai prises
+    .section-album__content.desktop-only
+      a(href='images/gallery/couple-ethienne-sarah.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
+        span.hide-only Album image
+        img.section-album__img.js-parallax(src='images/gallery/tiny/couple-ethienne-sarah.jpg', height='1920', width='800', alt='couple-ethienne-sarah')
+              
+    .section-album__content
+      .section-album__box-img
+        a(href='images/gallery/portrait-enfant.jpg', data-lightbox='gallery', data-title='Portrait - Enfant')
+          span.hide-only Album image
+          img.section-album__img(src='images/gallery/tiny/portrait-enfant.jpg', height='1920', width='800', alt='portrait-enfant')
+                  
+      .section-album__box-img
+        a(href='images/gallery/couple-ethienne-sarah-2.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
+          span.hide-only Album image
+          img.section-album__img(src='images/gallery/tiny/couple-ethienne-sarah-2.jpg', height='1920', width='800', alt='couple-ethienne-sarah-2')
+                
+      .section-album__box-img
+        a(href='images/gallery/portrait-kenny.jpg', data-lightbox='gallery', data-title='Portrait - Kenny')
+          span.hide-only Album image
+          img.section-album__img(src='images/gallery/tiny/portrait-kenny.jpg', height='1920', width='800', alt='portrait-kenny')
+                  
+      .section-album__box-img
+        a(href='images/gallery/portrait-njivinah.jpg', data-lightbox='gallery', data-title='Portrait - Njivinah')
+          span.hide-only Album image
+          img.section-album__img(src='images/gallery/tiny/portrait-njivinah.jpg', height='1920', width='800', alt='portrait-njivinah')
+              
+      .section-album__box-img
+        a(href='images/gallery/portrait-miss-earth.jpg', data-lightbox='gallery', data-title='Portrait - Miss Earth')
+          span.hide-only Album image
+          img.section-album__img(src='images/gallery/tiny/portrait-miss-earth.jpg', height='1920', width='800', alt='portrait-miss-earth')
+
+  
+
+
+
+
+
+

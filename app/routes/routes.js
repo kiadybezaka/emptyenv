@@ -2,9 +2,5 @@ var express = require('express');
 var app = express();
 var pages = require('../controllers/controllers');
 module.exports = function (app) {
-  app.get('/developpeur', pages.developpeur);
+  app.get('/gallery', pages.gallery);
 }
-module.exports = function (app) {
-  app.get('/testWs', pages.testWs);
-}
-
