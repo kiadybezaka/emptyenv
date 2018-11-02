@@ -22,4 +22,7 @@ footer
   a(href="#jiujitsu").section-header__link BJJ
   a(href="#contact").section-header__link Contact
 script(src= 'scripts/app.js')
+script(src='https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js')
+script.
+  var myLazyLoad = new LazyLoad({elements_selector: ".js-lazy",threshold:20});
 

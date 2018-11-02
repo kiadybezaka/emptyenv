@@ -2010,3 +2010,9 @@ h3, ul, h2, p {
 
 h2 {
   margin: 60px 0 10px; }
+
+.js-lazy {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; }
+  .js-lazy.loaded {
+    opacity: 1; }
