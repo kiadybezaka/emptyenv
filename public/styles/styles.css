@@ -1886,14 +1886,27 @@ h1, h2, body {
       justify-content: flex-start;
       flex-wrap: wrap; }
       .section-other__fun .fun__album img {
-        padding: 5px;
+        padding: 0;
         width: 100%;
         height: auto; }
     .section-other__fun .fun__album-img {
+      position: relative;
       width: 100%; }
       @media screen and (min-width: 480px) {
         .section-other__fun .fun__album-img {
           width: 33%; } }
+    .section-other__fun .fun__album-img-title {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.4); }
+      .section-other__fun .fun__album-img-title p {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        color: #ffffff; }
 
 .section-contact {
   min-height: 200px;
@@ -2016,3 +2029,19 @@ h2 {
   transition: opacity 1.5s ease-in-out; }
   .js-lazy.loaded {
     opacity: 1; }
+
+.overlay {
+  position: relative; }
+  .overlay:after {
+    transition: all 0.2s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .overlay:hover {
+    text-decoration: none; }
+    .overlay:hover:after {
+      background-color: rgba(255, 255, 255, 0.3); }

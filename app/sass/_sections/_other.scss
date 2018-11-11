@@ -85,15 +85,30 @@
       justify-content: flex-start;
       flex-wrap: wrap;
       img {
-        padding: 5px;
+        padding: 0;
         width: 100%;
         height: auto;
       }
     }
     .fun__album-img {
+      position: relative;
       width: 100%;
       @media screen and (min-width: 480px)  {
         width: 33%;
+      }
+    }
+    .fun__album-img-title {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0.4);
+      p {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        color: #ffffff;
       }
     }
   }
