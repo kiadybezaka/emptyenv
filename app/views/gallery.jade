@@ -1,0 +1,42 @@
+extends _base/layout.jade
+
+block vars
+
+  - title = 'Kiady Bezaka | Galerie'
+
+block main
+
+  .section-other#other
+    h2.section-other__title Galerie
+    p.section-other__description "Les photos que j'ai prises ..."
+    .section-other__content
+      .section-other__fun
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;Evenements&nbsp;
+        
+
+        .fun__album
+          a.fun__album-img.overlay(href="http://kiadybezaka.com/wedding-bruel-christelle" target="_blank" rel="noopener noreferrer")
+            img.js-lazy(data-src="images/gallery/overlay/bruel-christelle.jpg", height="200", width="200" alt="delcio pereira" )
+            .fun__album-img-title
+              p Bruel &amp; Christelle
+          
+        .section-skill__separator
+          p.section-skill__subtitle &nbsp;Portraits&nbsp;
+
+        .fun__album
+          a.fun__album-img.overlay(href="http://kiadybezaka.com/portrait-diane" target="_blank" rel="noopener noreferrer")
+            img.js-lazy(data-src="images/gallery/overlay/diane.jpg", height="200", width="200" alt="dqvid dias")
+            .fun__album-img-title
+              p Diane
+        
+        
+
+
+
+
+
+
+
+
+

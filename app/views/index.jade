@@ -18,7 +18,7 @@ block main
     .section-content
 
       .section-content__portfolio
-        img.portfolio__img(src="images/avatar/kiadybezaka.jpg", height="200", width="200" alt="avatar kiay bezaka" )
+        img.portfolio__img.js-lazy(data-src="images/avatar/kiadybezaka.jpg", height="200", width="200" alt="avatar kiay bezaka" )
         p.portfolio__first-name Razafindrabe
         p.portfolio__name Burel Kiady Bezaka
 
@@ -39,33 +39,35 @@ block main
     .section-album__content.desktop-only
       a(href='images/gallery/couple-ethienne-sarah.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
         span.hide-only Album image
-        img.section-album__img.js-parallax(src='images/gallery/tiny/couple-ethienne-sarah.jpg', height='1920', width='800', alt='couple-ethienne-sarah')
+        img.section-album__img.js-lazy.js-parallax(data-src='images/gallery/tiny/couple-ethienne-sarah.jpg', height='1920', width='800', alt='couple-ethienne-sarah')
               
     .section-album__content
       .section-album__box-img
         a(href='images/gallery/portrait-enfant.jpg', data-lightbox='gallery', data-title='Portrait - Enfant')
           span.hide-only Album image
-          img.section-album__img(src='images/gallery/tiny/portrait-enfant.jpg', height='1920', width='800', alt='portrait-enfant')
+          img.section-album__img.js-lazy(data-src='images/gallery/tiny/portrait-enfant.jpg', height='1920', width='800', alt='portrait-enfant')
                   
       .section-album__box-img
         a(href='images/gallery/couple-ethienne-sarah-2.jpg', data-lightbox='gallery', data-title='Couple - Ethienne & Sarah')
           span.hide-only Album image
-          img.section-album__img(src='images/gallery/tiny/couple-ethienne-sarah-2.jpg', height='1920', width='800', alt='couple-ethienne-sarah-2')
+          img.section-album__img.js-lazy(data-src='images/gallery/tiny/couple-ethienne-sarah-2.jpg', height='1920', width='800', alt='couple-ethienne-sarah-2')
                 
       .section-album__box-img
         a(href='images/gallery/portrait-kenny.jpg', data-lightbox='gallery', data-title='Portrait - Kenny')
           span.hide-only Album image
-          img.section-album__img(src='images/gallery/tiny/portrait-kenny.jpg', height='1920', width='800', alt='portrait-kenny')
+          img.section-album__img.js-lazy(data-src='images/gallery/tiny/portrait-kenny.jpg', height='1920', width='800', alt='portrait-kenny')
                   
       .section-album__box-img
         a(href='images/gallery/portrait-njivinah.jpg', data-lightbox='gallery', data-title='Portrait - Njivinah')
           span.hide-only Album image
-          img.section-album__img(src='images/gallery/tiny/portrait-njivinah.jpg', height='1920', width='800', alt='portrait-njivinah')
+          img.section-album__img.js-lazy(data-src='images/gallery/tiny/portrait-njivinah.jpg', height='1920', width='800', alt='portrait-njivinah')
               
       .section-album__box-img
         a(href='images/gallery/portrait-miss-earth.jpg', data-lightbox='gallery', data-title='Portrait - Miss Earth')
           span.hide-only Album image
-          img.section-album__img(src='images/gallery/tiny/portrait-miss-earth.jpg', height='1920', width='800', alt='portrait-miss-earth')
+          img.section-album__img.js-lazy(data-src='images/gallery/tiny/portrait-miss-earth.jpg', height='1920', width='800', alt='portrait-miss-earth')
+
+    a.btn(href="/portfolio" style="border: 2px solid #008CBA;border-radius: 40px;padding: 10px 35px;margin: 30px auto;display: block;width: 200px;") Plus d'images ...
 
   .section-tarif
     .section-tarif__content
@@ -121,19 +123,19 @@ block main
       .section-skill__box
         h3.section-skill__box-title HTML5
         span.section-skill__box-xp 2 ans d'experience
-        img.section-skill__box-img(src="images/logos/html5.png", height="100", width="100" alt="html5" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/html5.png", height="100", width="100" alt="html5" )
       .section-skill__box
         h3.section-skill__box-title CSS3
         span.section-skill__box-xp 2 ans d'experience
-        img.section-skill__box-img(src="images/logos/css3.png", height="100", width="100" alt="css3" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/css3.png", height="100", width="100" alt="css3" )
       .section-skill__box
         h3.section-skill__box-title Javascript
         span.section-skill__box-xp 2 ans d'experience
-        img.section-skill__box-img(src="images/logos/js.png", height="100", width="100" alt="js" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/js.png", height="100", width="100" alt="js" )
       .section-skill__box
         h3.section-skill__box-title ReactJS
         span.section-skill__box-xp 1 an d'experience
-        img.section-skill__box-img(src="images/logos/react.png", height="100", width="100" alt="react" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/react.png", height="100", width="100" alt="react" )
 
     .section-skill__separator
       p.section-skill__subtitle Technologies
@@ -141,47 +143,47 @@ block main
       .section-skill__box
         h3.section-skill__box-title Windows
         span.section-skill__box-xp OS principal
-        img.section-skill__box-img(src="images/logos/win.png", height="100", width="100" alt="win" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/win.png", height="100", width="100" alt="win" )
       .section-skill__box
         h3.section-skill__box-title Git
         span.section-skill__box-xp Versioning
-        img.section-skill__box-img(src="images/logos/git.png", height="100", width="100" alt="git" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/git.png", height="100", width="100" alt="git" )
       .section-skill__box
         h3.section-skill__box-title Gulp
         span.section-skill__box-xp Automatisation
-        img.section-skill__box-img(src="images/logos/gulp.png", height="100", width="100" alt="gulp" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/gulp.png", height="100", width="100" alt="gulp" )
       .section-skill__box
         h3.section-skill__box-title JQuery
         span.section-skill__box-xp Bibliothèque Js
-        img.section-skill__box-img(src="images/logos/jquery.png", height="100", width="100" alt="jquery" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/jquery.png", height="100", width="100" alt="jquery" )
       .section-skill__box
         h3.section-skill__box-title Node.js
         span.section-skill__box-xp Serveur Js
-        img.section-skill__box-img(src="images/logos/node.jpg", height="100", width="100" alt="node" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/node.jpg", height="100", width="100" alt="node" )
       .section-skill__box
         h3.section-skill__box-title MySql
         span.section-skill__box-xp BDD
-        img.section-skill__box-img(src="images/logos/mysql.png", height="100", width="100" alt="mysql" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/mysql.png", height="100", width="100" alt="mysql" )
       .section-skill__box
         h3.section-skill__box-title JAVA
         span.section-skill__box-xp Développement
-        img.section-skill__box-img(src="images/logos/java.png", height="100", width="100" alt="java" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/java.png", height="100", width="100" alt="java" )
       .section-skill__box
         h3.section-skill__box-title PHP
         span.section-skill__box-xp Développement
-        img.section-skill__box-img(src="images/logos/php.jpg", height="100", width="100" alt="php" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/php.jpg", height="100", width="100" alt="php" )
       .section-skill__box
         h3.section-skill__box-title Android
         span.section-skill__box-xp Développement
-        img.section-skill__box-img(src="images/logos/android.jpg", height="100", width="100" alt="android" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/android.jpg", height="100", width="100" alt="android" )
       .section-skill__box
         h3.section-skill__box-title Photoshop
         span.section-skill__box-xp Retouche
-        img.section-skill__box-img(src="images/logos/ps.jpg", height="100", width="100" alt="ps" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/ps.jpg", height="100", width="100" alt="ps" )
       .section-skill__box
         h3.section-skill__box-title Lightroom
         span.section-skill__box-xp Retouche
-        img.section-skill__box-img(src="images/logos/lr.png", height="100", width="100" alt="lr" )
+        img.section-skill__box-img.js-lazy(data-src="images/logos/lr.png", height="100", width="100" alt="lr" )
   .section-bjj#jiujitsu
     h2.section-bjj__title Jiu Jitsu Bresilien
     p.section-bjj__description Mon parcours en tant que competiteur
@@ -191,35 +193,35 @@ block main
           .section-bjj__box-item
             .section-bjj__box-title Open Africa 2018
             .section-bjj__box-medal Médaille d'argent
-            img.section-bjj__box-img(src="images/medal/open-africa-2018-bjj-kiadybezaka.png", height="200", width="200" alt="open africa 2018 kiady bezaka jiujitsu" )
+            img.section-bjj__box-img.js-lazy(data-src="images/medal/open-africa-2018-bjj-kiadybezaka.png", height="200", width="200" alt="open africa 2018 kiady bezaka jiujitsu" )
             .section-bjj__box-category Catégorie : -94kg
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
             .section-bjj__box-title Open Africa 2017
             .section-bjj__box-medal Médaille d'or
-            img.section-bjj__box-img(src="images/medal/open-africa-2017-bjj-kiadybezaka.png", height="200", width="200" alt="open africa 2017 kiady bezaka jiujitsu" )
+            img.section-bjj__box-img.js-lazy(data-src="images/medal/open-africa-2017-bjj-kiadybezaka.png", height="200", width="200" alt="open africa 2017 kiady bezaka jiujitsu" )
             .section-bjj__box-category Catégorie : -90kg
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
             .section-bjj__box-title Mauritius Open No Gi 2018
             .section-bjj__box-medal Médaille d'or
-            img.section-bjj__box-img(src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
+            img.section-bjj__box-img.js-lazy(data-src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
             .section-bjj__box-category Catégorie : -88kg
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
             .section-bjj__box-title Mauritius National 2017
             .section-bjj__box-medal Médaille d'or
-            img.section-bjj__box-img(src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
+            img.section-bjj__box-img.js-lazy(data-src="images/medal/or-kiady-bezaka.png", height="200", width="200" alt="mauritius kiady bezaka jiujitsu" )
             .section-bjj__box-category Catégorie : -85kg
             .section-bjj__box-belt Ceinture : Blanche
         .section-bjj__box
           .section-bjj__box-item
             .section-bjj__box-title ARGI competition 2017
             .section-bjj__box-medal Médaille d'argent
-            img.section-bjj__box-img(src="images/medal/arg-kiady-bezaka.png", height="200", width="200" alt="argi kiady bezaka jiujitsu" )
+            img.section-bjj__box-img.js-lazy(data-src="images/medal/arg-kiady-bezaka.png", height="200", width="200" alt="argi kiady bezaka jiujitsu" )
             .section-bjj__box-category Catégorie : -87kg
             .section-bjj__box-belt Ceinture : Blanche
 
@@ -235,15 +237,15 @@ block main
             .certification__content-item
               a.certification__content-slide-item(href="https://www.freecodecamp.org/kiadybezaka/front-end-certification" target="_blank" rel="noopener noreferrer")
                 h4.certification__title Front End Development Certification
-                img.certification__img(src="images/certif/front-end-certification-kiadybezaka.png", height="200", width="200" alt="front end certification kiady bezaka" )
+                img.section-bjj__box-img.js-lazy(data-src="images/certif/front-end-certification-kiadybezaka.png", height="200", width="200" alt="front end certification kiady bezaka" )
             .certification__content-item
               a.certification__content-slide-item(href="https://www.freecodecamp.org/kiadybezaka/data-visualization-certification" target="_blank" rel="noopener noreferrer")
                 h4.certification__title Data Visualization Certification
-                img.certification__img(src="images/certif/data-visualization-certification-kiadybezaka.png", height="200", width="200" alt="data visualisation certification kiady bezaka" )
+                img.section-bjj__box-img.js-lazy(data-src="images/certif/data-visualization-certification-kiadybezaka.png", height="200", width="200" alt="data visualisation certification kiady bezaka" )
             .certification__content-item
               a.certification__content-slide-item(href="https://www.freecodecamp.org/kiadybezaka/back-end-certification" target="_blank" rel="noopener noreferrer")
                 h4.certification__title Back End Development Certification
-                img.certification__img(src="images/certif/back-end-certification-kiadybezaka.png", height="200", width="200" alt="back end certification kiady bezaka" )
+                img.section-bjj__box-img.js-lazy(data-src="images/certif/back-end-certification-kiadybezaka.png", height="200", width="200" alt="back end certification kiady bezaka" )
         .section-skill__separator
           p.section-skill__subtitle &nbsp;Jiu Jitsu Bresilien&nbsp;
         .certification__item
@@ -251,26 +253,30 @@ block main
             .certification__content-item
               a.certification__content-slide-item(href="https://sjjif.com/" target="_blank" rel="noopener noreferrer")
                 h4.certification__title International Referee Certification
-                img.certification__img(src="images/certif/referee-bjj-kiadybezaka.jpg", height="200", width="200" alt="certif" )
+                img.section-bjj__box-img.js-lazy(data-src="images/certif/referee-bjj-kiadybezaka.jpg", height="200", width="200" alt="certif" )
       .section-other__fun
         .section-skill__separator
           p.section-skill__subtitle &nbsp;Front End Mentor&nbsp;
         p.fun__text.sr-only Eodem tempore etiam Hymetii praeclarae indolis viri negotium..
         .fun__album
           a.fun__album-img(href="https://www.linkedin.com/in/thedaviddias/" target="_blank" rel="noopener noreferrer")
-            img(src="images/mentor/david.jpg", height="200", width="200" alt="dqvid dias" )
+            img.js-lazy(data-src="images/mentor/david.jpg", height="200", width="200" alt="dqvid dias" )
           a.fun__album-img(href="https://www.linkedin.com/in/ikhlaas-subratty-39758273/" target="_blank" rel="noopener noreferrer")
-            img(src="images/mentor/ikhlass.jpg", height="200", width="200" alt="ikhlaas subratty" )
+            img.js-lazy(data-src="images/mentor/ikhlass.jpg", height="200", width="200" alt="ikhlaas subratty" )
           a.fun__album-img(href="https://www.linkedin.com/in/geoffrey-signorato-2475268a/" target="_blank" rel="noopener noreferrer")
-            img(src="images/mentor/geoffrey.jpg", height="200", width="200" alt="geoffrey signorato" )
+            img.js-lazy(data-src="images/mentor/geoffrey.jpg", height="200", width="200" alt="geoffrey signorato" )
         .section-skill__separator
           p.section-skill__subtitle &nbsp;Jiu Jitsu Brésilien&nbsp;
         p.fun__text.sr-only Eodem tempore etiam Hymetii praeclarae indolis viri negotium..
         .fun__album
           a.fun__album-img(href="http://ahjotrainingcenter.fi/ohjaajat/delcio-pereira/" target="_blank" rel="noopener noreferrer")
-            img(src="images/mentor/pereira.jpg", height="200", width="200" alt="delcio pereira" )
+            img.js-lazy(data-src="images/mentor/pereira.jpg", height="200", width="200" alt="delcio pereira" )
           a.fun__album-img(href="http://www.aloisiosilvabjj.com/index.php/history/professor-joao-history" target="_blank" rel="noopener noreferrer")
-            img(src="images/mentor/joao.jpg", height="200", width="200" alt="joao silva" )
+            img.js-lazy(data-src="images/mentor/joao.jpg", height="200", width="200" alt="joao silva" )
+          a.fun__album-img(href="http://www.reunionnaisdumonde.com/spip.php?article18532" target="_blank" rel="noopener noreferrer")
+            img.js-lazy(data-src="images/mentor/thiago.jpg", height="200", width="200" alt="thiago de guimaraes" )
+          a.fun__album-img(href="http://jits.fr/articles/entry/larissa-arrache-tout-aux-mondiaux" target="_blank" rel="noopener noreferrer")
+            img.js-lazy(data-src="images/mentor/carolina-carrielo.jpg", height="200", width="200" alt="carollina carriello & larissa campos" )
 
 
   .section-contact#contact

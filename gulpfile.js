@@ -22,7 +22,7 @@ gulp.task('sass', function() {
 // HTML Preprocessor - Comment/delete if not needed
 
 gulp.task('jade', function() {
-    return gulp.src('app/views/index.jade')
+    return gulp.src('app/views/*.jade')
     .pipe(jade({
         pretty: true
     }))
